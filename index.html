@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ระบบเช็คชื่อ MIIC Event</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="logo-section">
+          <div class="medical-icon">
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+              <path
+                d="M25 5L30 20H45L33 29L38 44L25 35L12 44L17 29L5 20H20L25 5Z"
+                fill="white"
+              />
+              <rect x="22" y="15" width="6" height="20" rx="1" fill="#0EA5E9" />
+              <rect x="15" y="22" width="20" height="6" rx="1" fill="#0EA5E9" />
+            </svg>
+          </div>
+          <div>
+            <h1>ระบบเช็คชื่อ MIIC</h1>
+            <p class="subtitle">
+              Medical Innovation Idea Challenge (MIIC 2025)
+            </p>
+          </div>
+        </div>
+        <div class="date-time" id="dateTime"></div>
+      </header>
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab-btn active" onclick="showTab('search')">
+          ค้นหาชื่อ
+        </button>
+        <button class="tab-btn" onclick="showTab('checklist')">
+          เช็คลิสต์
+        </button>
+        <button class="tab-btn" onclick="showTab('register')">
+          ลงทะเบียนหน้างาน
+        </button>
+        <button class="tab-btn" onclick="showTab('stats')">สถิติ</button>
+      </div>
+
+      <!-- Search Tab -->
+      <div id="search-tab" class="tab-content active">
+        <div class="search-section">
+          <h2>ค้นหาข้อมูลผู้เข้าร่วมงาน</h2>
+          <div class="search-box">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="พิมพ์ชื่อ-นามสกุลเพื่อค้นหา..."
+            />
+            <button onclick="searchParticipant()">ค้นหา</button>
+          </div>
+          <div id="searchResult" class="search-result"></div>
+        </div>
+      </div>
+
+      <!-- Checklist Tab -->
+      <div id="checklist-tab" class="tab-content">
+        <div class="checklist-section">
+          <h2>เช็คชื่อผู้เข้าร่วมงาน</h2>
+
+          <!-- Filter -->
+          <div class="filter-section">
+            <label>กรองตาม Status:</label>
+            <select id="statusFilter" onchange="filterChecklist()">
+              <option value="all">ทั้งหมด</option>
+              <option value="VIP">VIP</option>
+              <option value="Competitor">Competitor</option>
+              <option value="Visitor">Visitor</option>
+            </select>
+
+            <label style="margin-left: 20px">แสดง:</label>
+            <select id="attendanceFilter" onchange="filterChecklist()">
+              <option value="all">ทั้งหมด</option>
+              <option value="checked">เช็คแล้ว</option>
+              <option value="unchecked">ยังไม่เช็ค</option>
+            </select>
+          </div>
+
+          <div id="checklistContainer" class="checklist-container"></div>
+        </div>
+      </div>
+
+      <!-- Register Tab -->
+      <div id="register-tab" class="tab-content">
+        <div class="register-section">
+          <h2>ลงทะเบียนหน้างาน</h2>
+          <p class="form-description">สำหรับผู้ที่ยังไม่ได้ลงทะเบียนล่วงหน้า</p>
+
+          <form id="registerForm" class="register-form">
+            <div class="form-group">
+              <label for="registerName">ชื่อ-นามสกุล *</label>
+              <input
+                type="text"
+                id="registerName"
+                required
+                placeholder="กรุณากรอกชื่อ-นามสกุล"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="registerStatus">Status *</label>
+              <select id="registerStatus" required>
+                <option value="">เลือก Status</option>
+                <option value="VIP">VIP</option>
+                <option value="Competitor">Competitor</option>
+                <option value="Visitor">Visitor</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="registerEmail">อีเมล</label>
+              <input
+                type="email"
+                id="registerEmail"
+                placeholder="example@email.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="registerPhone">เบอร์โทรศัพท์</label>
+              <input type="tel" id="registerPhone" placeholder="08X-XXX-XXXX" />
+            </div>
+
+            <div class="form-group">
+              <label for="registerOrganization">สถาบัน/องค์กร</label>
+              <input
+                type="text"
+                id="registerOrganization"
+                placeholder="ชื่อสถาบันหรือองค์กร"
+              />
+            </div>
+
+            <button type="submit" class="submit-btn">บันทึกข้อมูล</button>
+          </form>
+
+          <div
+            id="registerSuccess"
+            class="success-message"
+            style="display: none"
+          ></div>
+        </div>
+      </div>
+
+      <!-- Stats Tab -->
+      <div id="stats-tab" class="tab-content">
+        <div class="stats-section">
+          <h2>สถิติการเข้าร่วมงาน</h2>
+
+          <div class="stats-grid">
+            <div class="stat-card total">
+              <div class="stat-label-top">ผู้ลงทะเบียนทั้งหมด</div>
+              <div class="stat-value" id="totalParticipants">0</div>
+            </div>
+
+            <div class="stat-card checked">
+              <div class="stat-label-top">เช็คชื่อแล้ว</div>
+              <div class="stat-value" id="checkedIn">0</div>
+            </div>
+
+            <div class="stat-card pending">
+              <div class="stat-label-top">ยังไม่เช็คชื่อ</div>
+              <div class="stat-value" id="notCheckedIn">0</div>
+            </div>
+
+            <div class="stat-card onsite">
+              <div class="stat-label-top">ลงทะเบียนหน้างาน</div>
+              <div class="stat-value" id="onsiteRegistration">0</div>
+            </div>
+          </div>
+
+          <div class="status-breakdown">
+            <h3>แยกตาม Status</h3>
+            <div class="status-grid">
+              <div class="status-item vip">
+                <div class="status-header">
+                  <span class="status-badge">VIP</span>
+                  <span class="status-count" id="vipCount">0</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill vip-fill" id="vipProgress"></div>
+                </div>
+                <div class="status-detail">
+                  <span id="vipChecked">0</span> /
+                  <span id="vipTotal">0</span> เช็คชื่อแล้ว
+                </div>
+              </div>
+
+              <div class="status-item competitor">
+                <div class="status-header">
+                  <span class="status-badge">Competitor</span>
+                  <span class="status-count" id="competitorCount">0</span>
+                </div>
+                <div class="progress-bar">
+                  <div
+                    class="progress-fill competitor-fill"
+                    id="competitorProgress"
+                  ></div>
+                </div>
+                <div class="status-detail">
+                  <span id="competitorChecked">0</span> /
+                  <span id="competitorTotal">0</span> เช็คชื่อแล้ว
+                </div>
+              </div>
+
+              <div class="status-item visitor">
+                <div class="status-header">
+                  <span class="status-badge">Visitor</span>
+                  <span class="status-count" id="visitorCount">0</span>
+                </div>
+                <div class="progress-bar">
+                  <div
+                    class="progress-fill visitor-fill"
+                    id="visitorProgress"
+                  ></div>
+                </div>
+                <div class="status-detail">
+                  <span id="visitorChecked">0</span> /
+                  <span id="visitorTotal">0</span> เช็คชื่อแล้ว
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
