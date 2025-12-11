@@ -1,35 +1,32 @@
 // Data Management
 let participants = [];
 let onsiteRegistrations = [];
+let currentSession = "17_all"; // Default session
 
-// Initial participant data from CSV
-const initialParticipants = [
-  { id: 1, name: "พลอยชมพู กะฐินเทศ", status: "VIP" },
-  { id: 2, name: "ณัฐวศา ประมวล", status: "VIP" },
-  { id: 3, name: "ชนวีร์ พิมพ์โปร่ง", status: "VIP" },
-  { id: 4, name: "ศุภชัย รุ่งแสง", status: "VIP" },
-  { id: 5, name: "ตะวัน บู่ทอง", status: "Competitor" },
-  { id: 6, name: "อัฑฒกร อาสนเสวตร์", status: "Competitor" },
-  { id: 7, name: "นายธนกร บุญเกิดรัมย์", status: "Competitor" },
-  { id: 8, name: "นายภูดิส สถานเมือง", status: "Competitor" },
-  { id: 9, name: "ภัทรพล ไทยประโคน", status: "Competitor" },
-  { id: 10, name: "บุลกิต นพน้อย", status: "Competitor" },
-  { id: 11, name: "กฤษดา ดาวลอย", status: "Competitor" },
-  { id: 12, name: "ธาวิน ชาวหวายสอ", status: "Competitor" },
-  { id: 13, name: "ธนโชติ วิไล", status: "Competitor" },
-  { id: 14, name: "ธัญภัค ไชยชาดา", status: "Competitor" },
-  { id: 15, name: "รณกฤต งามจันทร์", status: "Competitor" },
-  { id: 16, name: "พัชริญา หนุนดี", status: "Visitor" },
-  { id: 17, name: "กิรติ โพธิแดง", status: "Visitor" },
-  { id: 18, name: "กชพร มูลเมือง", status: "Visitor" },
-  { id: 19, name: "ศตายุ ชีวจิตธรรม", status: "Visitor" },
-  { id: 20, name: "จิรเดช พัฒน์ถึง", status: "Visitor" },
-  { id: 21, name: "นาย ฐาปกรณ์ แซ่เตีย", status: "Visitor" },
-  { id: 22, name: "ภูเกริก ภักดีเกษม", status: "Visitor" },
-  { id: 23, name: "ชิติพัทธ์ สร้อยสังวาลย์", status: "Visitor" },
-  { id: 24, name: "ชาญกสิ วงษา", status: "Visitor" },
-  { id: 25, name: "ฐปนัชญ์ อรรถจิราภรณ์", status: "Visitor" },
-];
+// Initial participant data is loaded from data.js
+
+// Session Management
+function changeSession() {
+  const selector = document.getElementById("sessionSelect");
+  currentSession = selector.value;
+
+  // Refresh displays
+  displayChecklist();
+  updateStats();
+
+  // Clear search result
+  document.getElementById("searchResult").innerHTML = "";
+  document.getElementById("searchInput").value = "";
+}
+
+function getFilteredParticipants() {
+  return participants.filter((p) => {
+    if (currentSession === "17_all") {
+      return p.session && p.session.startsWith("17");
+    }
+    return p.session === currentSession;
+  });
+}
 
 // Load initial data
 function loadInitialData() {
@@ -128,13 +125,14 @@ function searchParticipant() {
     return;
   }
 
-  const results = participants.filter((p) =>
+  // Use filtered participants based on current session
+  const results = getFilteredParticipants().filter((p) =>
     p.name.toLowerCase().includes(searchTerm)
   );
 
   if (results.length === 0) {
     resultDiv.innerHTML =
-      '<div class="no-result">ไม่พบข้อมูลที่ค้นหา<br>คุณสามารถลงทะเบียนหน้างานได้ที่แท็บ "ลงทะเบียนหน้างาน"</div>';
+      '<div class="no-result">ไม่พบข้อมูลที่ค้นหาในรอบนี้<br>คุณสามารถลงทะเบียนหน้างานได้ที่แท็บ "ลงทะเบียนหน้างาน"</div>';
     return;
   }
 
@@ -142,19 +140,29 @@ function searchParticipant() {
     .map((p) => {
       const statusClass = p.status.toLowerCase();
       const checkStatus = p.checked
-        ? `<div style="color: #10b981; font-weight: 600; margin-top: 10px;">เช็คชื่อแล้ว (${p.checkTime})</div>`
-        : `<div style="color: #f59e0b; font-weight: 600; margin-top: 10px;">ยังไม่ได้เช็คชื่อ</div>`;
+        ? `<div style="color: #10b981; font-weight: 600; margin-top: 10px; font-size: 1.1rem;">✅ เช็คชื่อแล้ว (${p.checkTime})</div>`
+        : `<div style="color: #f59e0b; font-weight: 600; margin-top: 10px; font-size: 1.1rem;">⚠️ ยังไม่ได้เช็คชื่อ</div>`;
 
       return `
-            <div class="result-card">
-                <h3>${p.name}</h3>
-                <div>
-                    <span class="status-badge ${statusClass}">${p.status}</span>
+            <div class="result-card" style="border-left: 5px solid ${
+              p.checked ? "#10b981" : "#f59e0b"
+            };">
+                <h3 style="font-size: 1.5rem; margin-bottom: 10px;">${
+                  p.name
+                }</h3>
+                <div style="margin-bottom: 15px;">
+                    <span class="status-badge ${statusClass}" style="font-size: 1.2rem; padding: 8px 16px;">${
+        p.status
+      }</span>
                     ${
                       p.onsite
-                        ? '<span class="status-badge" style="background: #8b5cf6; margin-left: 10px;">ลงทะเบียนหน้างาน</span>'
+                        ? '<span class="status-badge" style="background: #8b5cf6; margin-left: 10px; font-size: 1rem;">ลงทะเบียนหน้างาน</span>'
                         : ""
                     }
+                </div>
+                <div style="font-size: 1rem; color: #64748b; margin-bottom: 10px;">
+                    <strong>สังกัด:</strong> ${p.org || "-"} <br>
+                    <strong>หมายเหตุ:</strong> ${p.note || "-"}
                 </div>
                 ${checkStatus}
                 ${
@@ -162,25 +170,26 @@ function searchParticipant() {
                     ? `
                     <button onclick="quickCheckIn(${p.id})" style="
                         margin-top: 15px;
-                        padding: 12px 30px;
+                        padding: 15px 40px;
                         background: linear-gradient(135deg, #10b981, #059669);
                         color: white;
                         border: none;
-                        border-radius: 8px;
+                        border-radius: 10px;
                         font-weight: 600;
+                        font-size: 1.1rem;
                         cursor: pointer;
                         font-family: 'Prompt', sans-serif;
-                    ">เช็คชื่อเลย</button>
+                        box-shadow: 0 4px 6px rgba(16, 185, 129, 0.2);
+                        transition: transform 0.2s;
+                    " onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">เช็คชื่อเลย</button>
                 `
                     : ""
                 }
             </div>
-        `;
+`;
     })
     .join("");
-}
-
-// Quick check-in from search
+} // Quick check-in from search
 function quickCheckIn(id) {
   const participant = participants.find((p) => p.id === id);
   if (participant) {
@@ -197,7 +206,8 @@ function displayChecklist() {
   const statusFilter = document.getElementById("statusFilter").value;
   const attendanceFilter = document.getElementById("attendanceFilter").value;
 
-  let filtered = [...participants];
+  // Use filtered participants based on current session
+  let filtered = [...getFilteredParticipants()];
 
   // Apply status filter
   if (statusFilter !== "all") {
@@ -268,6 +278,12 @@ function toggleCheck(id) {
     saveCheckInData();
     displayChecklist();
     updateStats();
+
+    // If we are in search view, refresh search results to show updated status
+    const searchInput = document.getElementById("searchInput");
+    if (searchInput && searchInput.value.trim() !== "") {
+      searchParticipant();
+    }
   }
 }
 
@@ -304,12 +320,13 @@ function registerOnsite() {
     email: email,
     phone: phone,
     organization: organization,
-    checked: true, // Auto check-in for onsite registration
+    checked: true, // Auto check-in
     checkTime: new Date().toLocaleTimeString("th-TH", {
       hour: "2-digit",
       minute: "2-digit",
     }),
     onsite: true,
+    session: currentSession, // Assign current session
   };
 
   participants.push(newParticipant);
@@ -342,10 +359,11 @@ function registerOnsite() {
 
 // Statistics
 function updateStats() {
-  const total = participants.length;
-  const checked = participants.filter((p) => p.checked).length;
+  const filteredParticipants = getFilteredParticipants();
+  const total = filteredParticipants.length;
+  const checked = filteredParticipants.filter((p) => p.checked).length;
   const notChecked = total - checked;
-  const onsite = onsiteRegistrations.length;
+  const onsite = filteredParticipants.filter((p) => p.onsite).length;
 
   document.getElementById("totalParticipants").textContent = total;
   document.getElementById("checkedIn").textContent = checked;
@@ -356,19 +374,24 @@ function updateStats() {
   const statuses = ["VIP", "Competitor", "Visitor"];
   statuses.forEach((status) => {
     const statusLower = status.toLowerCase();
-    const statusParticipants = participants.filter((p) => p.status === status);
+    const statusParticipants = filteredParticipants.filter(
+      (p) => p.status === status
+    );
     const statusTotal = statusParticipants.length;
     const statusChecked = statusParticipants.filter((p) => p.checked).length;
     const percentage =
       statusTotal > 0 ? (statusChecked / statusTotal) * 100 : 0;
 
-    document.getElementById(`${statusLower}Count`).textContent = statusTotal;
-    document.getElementById(`${statusLower}Total`).textContent = statusTotal;
-    document.getElementById(`${statusLower}Checked`).textContent =
-      statusChecked;
-    document.getElementById(
-      `${statusLower}Progress`
-    ).style.width = `${percentage}%`;
+    const countEl = document.getElementById(`${statusLower}Count`);
+    if (countEl) {
+      countEl.textContent = statusTotal;
+      document.getElementById(`${statusLower}Total`).textContent = statusTotal;
+      document.getElementById(`${statusLower}Checked`).textContent =
+        statusChecked;
+      document.getElementById(
+        `${statusLower}Progress`
+      ).style.width = `${percentage}%`;
+    }
   });
 }
 

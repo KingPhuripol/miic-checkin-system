@@ -35,6 +35,18 @@
         <div class="date-time" id="dateTime"></div>
       </header>
 
+      <!-- Session Selector -->
+      <div class="session-selector">
+        <label for="sessionSelect">เลือกวัน/รอบ:</label>
+        <select id="sessionSelect" onchange="changeSession()">
+          <option value="17_all">วันที่ 17 ธ.ค. (ทั้งหมด)</option>
+          <option value="17_morning">วันที่ 17 ธ.ค. (เช้า)</option>
+          <option value="17_afternoon_1">วันที่ 17 ธ.ค. (บ่าย ห้อง 1)</option>
+          <option value="17_afternoon_2">วันที่ 17 ธ.ค. (บ่าย ห้อง 2)</option>
+          <option value="18_all_day">วันที่ 18 ธ.ค. (ทั้งวัน)</option>
+        </select>
+      </div>
+
       <!-- Tabs -->
       <div class="tabs">
         <button class="tab-btn active" onclick="showTab('search')">
@@ -236,6 +248,7 @@
       </div>
     </div>
 
+    <script src="data.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
