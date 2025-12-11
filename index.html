@@ -248,6 +248,31 @@
       </div>
     </div>
 
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+      <div class="modal-content">
+        <div class="success-icon">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M20 6L9 17l-5-5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <h2>เช็คชื่อเรียบร้อย!</h2>
+        <div id="modalParticipantName" class="modal-name"></div>
+        <div id="modalParticipantStatus" class="modal-status"></div>
+        <div id="modalCheckTime" class="modal-time"></div>
+        <button onclick="closeModal()" class="modal-btn">ตกลง</button>
+      </div>
+    </div>
+
     <script src="data.js"></script>
     <script src="script.js"></script>
   </body>

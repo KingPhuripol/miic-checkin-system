@@ -272,6 +272,7 @@ function toggleCheck(id) {
         hour: "2-digit",
         minute: "2-digit",
       });
+      showCheckInSuccess(participant);
     } else {
       participant.checkTime = null;
     }
@@ -286,6 +287,38 @@ function toggleCheck(id) {
     }
   }
 }
+
+// Modal Functions
+function showCheckInSuccess(participant) {
+  const modal = document.getElementById("successModal");
+  const nameEl = document.getElementById("modalParticipantName");
+  const statusEl = document.getElementById("modalParticipantStatus");
+  const timeEl = document.getElementById("modalCheckTime");
+
+  nameEl.textContent = participant.name;
+  statusEl.textContent = participant.status;
+
+  // Reset classes and add new ones
+  statusEl.className = "modal-status";
+  statusEl.classList.add(participant.status.toLowerCase());
+
+  timeEl.textContent = `เวลา: ${participant.checkTime}`;
+
+  modal.style.display = "flex";
+}
+
+function closeModal() {
+  const modal = document.getElementById("successModal");
+  modal.style.display = "none";
+}
+
+// Close modal when clicking outside
+window.onclick = function (event) {
+  const modal = document.getElementById("successModal");
+  if (event.target == modal) {
+    closeModal();
+  }
+};
 
 function filterChecklist() {
   displayChecklist();
