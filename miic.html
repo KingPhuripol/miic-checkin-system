@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIIC: Medical Innovation Idea Challenge - Check-in System</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="miic_styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="logo-section">
+          <div class="medical-icon">
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+              <circle cx="25" cy="25" r="23" fill="white" stroke="#8B5CF6" stroke-width="2"/>
+              <path d="M25 12L28 22H38L30 28L33 38L25 32L17 38L20 28L12 22H22L25 12Z" fill="#8B5CF6"/>
+            </svg>
+          </div>
+          <div>
+            <h1>MIIC: Medical Innovation Idea Challenge</h1>
+            <p class="subtitle">ระบบเช็คชื่อผู้เข้าร่วมแข่งขัน</p>
+          </div>
+        </div>
+        <div class="date-time" id="dateTime"></div>
+      </header>
+
+      <!-- Session Selector -->
+      <div class="session-selector">
+        <label for="sessionSelect">เลือกระดับการศึกษา:</label>
+        <select id="sessionSelect" onchange="changeSession()">
+          <option value="all">ทั้งหมด</option>
+          <option value="secondary">มัธยมศึกษา (Secondary)</option>
+          <option value="higher">อุดมศึกษา (Higher Education)</option>
+        </select>
+      </div>
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab-btn active" onclick="showTab('search')">
+          ค้นหาชื่อ
+        </button>
+        <button class="tab-btn" onclick="showTab('checklist')">
+          เช็คลิสต์
+        </button>
+        <button class="tab-btn" onclick="showTab('teams')">
+          รายชื่อทีม
+        </button>
+        <button class="tab-btn" onclick="showTab('stats')">สถิติ</button>
+      </div>
+
+      <!-- Search Tab -->
+      <div id="search-tab" class="tab-content active">
+        <div class="search-section">
+          <h2>ค้นหาข้อมูลผู้เข้าแข่งขัน</h2>
+          <div class="search-box">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="พิมพ์ชื่อ-นามสกุล หรือชื่อทีมเพื่อค้นหา..."
+            />
+            <button onclick="searchParticipant()">ค้นหา</button>
+          </div>
+          <div id="searchResult" class="search-result"></div>
+        </div>
+      </div>
+
+      <!-- Checklist Tab -->
+      <div id="checklist-tab" class="tab-content">
+        <div class="checklist-section">
+          <h2>เช็คชื่อผู้เข้าแข่งขัน</h2>
+
+          <!-- Filter -->
+          <div class="filter-section">
+            <label>กรองตาม Status:</label>
+            <select id="statusFilter" onchange="filterChecklist()">
+              <option value="all">ทั้งหมด</option>
+              <option value="Competitor">Competitor</option>
+              <option value="Jury">Jury</option>
+            </select>
+
+            <label style="margin-left: 20px">แสดง:</label>
+            <select id="attendanceFilter" onchange="filterChecklist()">
+              <option value="all">ทั้งหมด</option>
+              <option value="checked">เช็คแล้ว</option>
+              <option value="unchecked">ยังไม่เช็ค</option>
+            </select>
+          </div>
+
+          <div id="checklistContainer" class="checklist-container"></div>
+        </div>
+      </div>
+
+      <!-- Teams Tab -->
+      <div id="teams-tab" class="tab-content">
+        <div class="teams-section">
+          <h2>รายชื่อทีมผู้เข้าแข่งขัน</h2>
+          <div id="teamsContainer" class="teams-container"></div>
+        </div>
+      </div>
+
+      <!-- Stats Tab -->
+      <div id="stats-tab" class="tab-content">
+        <div class="stats-section">
+          <h2>สถิติการเช็คชื่อ</h2>
+          <div class="stats-grid">
+            <div class="stat-card total">
+              <div class="stat-icon">👥</div>
+              <div class="stat-number" id="totalParticipants">0</div>
+              <div class="stat-label">ผู้เข้าร่วมทั้งหมด</div>
+            </div>
+            <div class="stat-card checked">
+              <div class="stat-icon">✅</div>
+              <div class="stat-number" id="checkedIn">0</div>
+              <div class="stat-label">เช็คชื่อแล้ว</div>
+            </div>
+            <div class="stat-card not-checked">
+              <div class="stat-icon">⏳</div>
+              <div class="stat-number" id="notCheckedIn">0</div>
+              <div class="stat-label">ยังไม่เช็คชื่อ</div>
+            </div>
+            <div class="stat-card teams">
+              <div class="stat-icon">🏆</div>
+              <div class="stat-number" id="totalTeams">0</div>
+              <div class="stat-label">จำนวนทีม</div>
+            </div>
+          </div>
+
+          <!-- Status Breakdown -->
+          <div class="status-breakdown">
+            <h3>แยกตาม Status</h3>
+            <div class="status-grid">
+              <div class="status-item competitor">
+                <div class="status-header">
+                  <span class="status-badge">Competitor</span>
+                  <span class="status-count" id="competitorCount">0</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill competitor-fill" id="competitorProgress"></div>
+                </div>
+                <div class="status-detail">
+                  <span id="competitorChecked">0</span> /
+                  <span id="competitorTotal">0</span> เช็คชื่อแล้ว
+                </div>
+              </div>
+
+              <div class="status-item jury">
+                <div class="status-header">
+                  <span class="status-badge">Jury</span>
+                  <span class="status-count" id="juryCount">0</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill jury-fill" id="juryProgress"></div>
+                </div>
+                <div class="status-detail">
+                  <span id="juryChecked">0</span> /
+                  <span id="juryTotal">0</span> เช็คชื่อแล้ว
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Level Breakdown -->
+          <div class="status-breakdown">
+            <h3>แยกตามระดับการศึกษา</h3>
+            <div class="status-grid">
+              <div class="status-item secondary">
+                <div class="status-header">
+                  <span class="status-badge secondary-badge">มัธยมศึกษา</span>
+                  <span class="status-count" id="secondaryCount">0</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill secondary-fill" id="secondaryProgress"></div>
+                </div>
+                <div class="status-detail">
+                  <span id="secondaryChecked">0</span> /
+                  <span id="secondaryTotal">0</span> เช็คชื่อแล้ว
+                </div>
+              </div>
+
+              <div class="status-item higher">
+                <div class="status-header">
+                  <span class="status-badge higher-badge">อุดมศึกษา</span>
+                  <span class="status-count" id="higherCount">0</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill higher-fill" id="higherProgress"></div>
+                </div>
+                <div class="status-detail">
+                  <span id="higherChecked">0</span> /
+                  <span id="higherTotal">0</span> เช็คชื่อแล้ว
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+      <div class="modal-content">
+        <div class="success-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h2>เช็คชื่อเรียบร้อย!</h2>
+        <div id="modalParticipantName" class="modal-name"></div>
+        <div id="modalTeamName" class="modal-team"></div>
+        <div id="modalParticipantStatus" class="modal-status"></div>
+        <div id="modalCheckTime" class="modal-time"></div>
+        <button onclick="closeModal()" class="modal-btn">ตกลง</button>
+      </div>
+    </div>
+
+    <script src="miic_data.js"></script>
+    <script src="miic_script.js"></script>
+  </body>
+</html>
