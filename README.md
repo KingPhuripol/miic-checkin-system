@@ -1,6 +1,6 @@
-# ระบบเช็คชื่อ MIIC 2025
+# Thailand Health Innovation Ecosystem Forum 2025 Check-in System
 
-ระบบเช็คชื่อสำหรับงาน Medical Innovation Idea Challenge (MIIC 2025)
+ระบบเช็คชื่อสำหรับงาน Thailand Health Innovation Ecosystem Forum 2025
 
 ## คุณสมบัติ
 
