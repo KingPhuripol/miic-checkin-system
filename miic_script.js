@@ -6,19 +6,19 @@ let currentSession = "all"; // Default session
 function changeSession() {
   const selector = document.getElementById("sessionSelect");
   currentSession = selector.value;
-  
+
   // Refresh displays
   displayChecklist();
   displayTeams();
   updateStats();
-  
+
   // Clear search result
   document.getElementById("searchResult").innerHTML = "";
   document.getElementById("searchInput").value = "";
 }
 
 function getFilteredParticipants() {
-  return participants.filter(p => {
+  return participants.filter((p) => {
     if (currentSession === "all") {
       return true;
     }
@@ -92,7 +92,7 @@ function showTab(tabName) {
   if (tabName === "stats") {
     updateStats();
   }
-  
+
   // Update teams when teams tab is shown
   if (tabName === "teams") {
     displayTeams();
@@ -114,31 +114,39 @@ function searchParticipant() {
   }
 
   // Use filtered participants based on current session
-  const results = getFilteredParticipants().filter((p) =>
-    p.name.toLowerCase().includes(searchTerm) ||
-    (p.team_name && p.team_name.toLowerCase().includes(searchTerm))
+  const results = getFilteredParticipants().filter(
+    (p) =>
+      p.name.toLowerCase().includes(searchTerm) ||
+      (p.team_name && p.team_name.toLowerCase().includes(searchTerm))
   );
 
   if (results.length === 0) {
-    resultDiv.innerHTML =
-      '<div class="no-result">ไม่พบข้อมูลที่ค้นหา</div>';
+    resultDiv.innerHTML = '<div class="no-result">ไม่พบข้อมูลที่ค้นหา</div>';
     return;
   }
 
   resultDiv.innerHTML = results
     .map((p) => {
       const statusClass = p.status.toLowerCase();
-      const educationClass = p.session === 'secondary' ? 'secondary' : 'higher';
+      const educationClass = p.session === "secondary" ? "secondary" : "higher";
       const checkStatus = p.checked
         ? `<div style="color: #10b981; font-weight: 600; margin-top: 10px; font-size: 1.1rem;">✅ เช็คชื่อแล้ว (${p.checkTime})</div>`
         : `<div style="color: #f59e0b; font-weight: 600; margin-top: 10px; font-size: 1.1rem;">⚠️ ยังไม่ได้เช็คชื่อ</div>`;
 
       return `
-            <div class="result-card" style="border-left: 5px solid ${p.checked ? '#10b981' : '#f59e0b'};">
-                <h3 style="font-size: 1.5rem; margin-bottom: 10px;">${p.name}</h3>
+            <div class="result-card" style="border-left: 5px solid ${
+              p.checked ? "#10b981" : "#f59e0b"
+            };">
+                <h3 style="font-size: 1.5rem; margin-bottom: 10px;">${
+                  p.name
+                }</h3>
                 <div style="margin-bottom: 15px;">
-                    <span class="status-badge ${statusClass}" style="font-size: 1rem; padding: 6px 14px;">${p.status}</span>
-                    <span class="status-badge ${educationClass}-badge" style="font-size: 0.9rem; padding: 6px 14px; margin-left: 8px;">${p.education_level}</span>
+                    <span class="status-badge ${statusClass}" style="font-size: 1rem; padding: 6px 14px;">${
+        p.status
+      }</span>
+                    <span class="status-badge ${educationClass}-badge" style="font-size: 0.9rem; padding: 6px 14px; margin-left: 8px;">${
+        p.education_level
+      }</span>
                 </div>
                 <div style="font-size: 1rem; color: #64748b; margin-bottom: 10px;">
                     <strong>ทีม:</strong> ${p.team_name || "-"} <br>
@@ -213,7 +221,7 @@ function displayChecklist() {
   container.innerHTML = filtered
     .map((p) => {
       const statusClass = p.status.toLowerCase();
-      const educationClass = p.session === 'secondary' ? 'secondary' : 'higher';
+      const educationClass = p.session === "secondary" ? "secondary" : "higher";
       const checkedClass = p.checked ? "checked" : "";
       const checkIcon = p.checked ? "✓" : "○";
       const checkTime = p.checked
@@ -221,16 +229,20 @@ function displayChecklist() {
         : "";
 
       return `
-            <div class="checklist-item ${checkedClass}" onclick="toggleCheck(${p.id})">
+            <div class="checklist-item ${checkedClass}" onclick="toggleCheck(${
+        p.id
+      })">
                 <div class="checklist-header">
                     <div class="checklist-number">${p.id}</div>
                     <div class="check-icon">${checkIcon}</div>
                 </div>
                 <div class="checklist-name">${p.name}</div>
-                <div class="checklist-team">${p.team_name || '-'}</div>
+                <div class="checklist-team">${p.team_name || "-"}</div>
                 <div class="checklist-status">
                     <span class="status-badge ${statusClass}">${p.status}</span>
-                    <span class="status-badge ${educationClass}-badge" style="font-size: 0.7em;">${p.education_level}</span>
+                    <span class="status-badge ${educationClass}-badge" style="font-size: 0.7em;">${
+        p.education_level
+      }</span>
                 </div>
                 ${checkTime}
             </div>
@@ -274,13 +286,13 @@ function showCheckInSuccess(participant) {
   const timeEl = document.getElementById("modalCheckTime");
 
   nameEl.textContent = participant.name;
-  teamEl.textContent = `ทีม: ${participant.team_name || '-'}`;
+  teamEl.textContent = `ทีม: ${participant.team_name || "-"}`;
   statusEl.textContent = `${participant.status} | ${participant.education_level}`;
-  
+
   // Reset classes and add new ones
   statusEl.className = "modal-status";
   statusEl.classList.add(participant.status.toLowerCase());
-  
+
   timeEl.textContent = `เวลา: ${participant.checkTime}`;
 
   modal.style.display = "flex";
@@ -292,12 +304,12 @@ function closeModal() {
 }
 
 // Close modal when clicking outside
-window.onclick = function(event) {
+window.onclick = function (event) {
   const modal = document.getElementById("successModal");
   if (event.target == modal) {
     closeModal();
   }
-}
+};
 
 function filterChecklist() {
   displayChecklist();
@@ -306,11 +318,13 @@ function filterChecklist() {
 // Teams Display
 function displayTeams() {
   const container = document.getElementById("teamsContainer");
-  const filtered = getFilteredParticipants().filter(p => p.status === 'Competitor');
-  
+  const filtered = getFilteredParticipants().filter(
+    (p) => p.status === "Competitor"
+  );
+
   // Group by team
   const teams = {};
-  filtered.forEach(p => {
+  filtered.forEach((p) => {
     const teamKey = `${p.team_num}_${p.session}`;
     if (!teams[teamKey]) {
       teams[teamKey] = {
@@ -320,29 +334,37 @@ function displayTeams() {
         session: p.session,
         advisor: p.advisor,
         institution: p.institution,
-        members: []
+        members: [],
       };
     }
     teams[teamKey].members.push(p);
   });
-  
+
   const teamList = Object.values(teams).sort((a, b) => {
     if (a.session !== b.session) return a.session.localeCompare(b.session);
     return a.team_num - b.team_num;
   });
-  
-  container.innerHTML = teamList.map(team => {
-    const allChecked = team.members.every(m => m.checked);
-    const someChecked = team.members.some(m => m.checked);
-    const teamStatus = allChecked ? 'complete' : (someChecked ? 'partial' : 'pending');
-    const checkedCount = team.members.filter(m => m.checked).length;
-    const educationClass = team.session === 'secondary' ? 'secondary' : 'higher';
-    
-    return `
+
+  container.innerHTML = teamList
+    .map((team) => {
+      const allChecked = team.members.every((m) => m.checked);
+      const someChecked = team.members.some((m) => m.checked);
+      const teamStatus = allChecked
+        ? "complete"
+        : someChecked
+        ? "partial"
+        : "pending";
+      const checkedCount = team.members.filter((m) => m.checked).length;
+      const educationClass =
+        team.session === "secondary" ? "secondary" : "higher";
+
+      return `
       <div class="team-card ${teamStatus}">
         <div class="team-header">
           <div class="team-number">ทีมที่ ${team.team_num}</div>
-          <span class="status-badge ${educationClass}-badge">${team.education_level}</span>
+          <span class="status-badge ${educationClass}-badge">${
+        team.education_level
+      }</span>
         </div>
         <h3 class="team-name">${team.team_name}</h3>
         <div class="team-info">
@@ -352,19 +374,32 @@ function displayTeams() {
         <div class="team-members">
           <div class="members-header">
             <strong>สมาชิก</strong> 
-            <span class="member-count">${checkedCount}/${team.members.length} เช็คชื่อแล้ว</span>
+            <span class="member-count">${checkedCount}/${
+        team.members.length
+      } เช็คชื่อแล้ว</span>
           </div>
-          ${team.members.map(m => `
-            <div class="member-item ${m.checked ? 'checked' : ''}" onclick="toggleCheck(${m.id})">
-              <span class="member-check">${m.checked ? '✓' : '○'}</span>
+          ${team.members
+            .map(
+              (m) => `
+            <div class="member-item ${
+              m.checked ? "checked" : ""
+            }" onclick="toggleCheck(${m.id})">
+              <span class="member-check">${m.checked ? "✓" : "○"}</span>
               <span class="member-name">${m.name}</span>
-              ${m.checked ? `<span class="member-time">${m.checkTime}</span>` : ''}
+              ${
+                m.checked
+                  ? `<span class="member-time">${m.checkTime}</span>`
+                  : ""
+              }
             </div>
-          `).join('')}
+          `
+            )
+            .join("")}
         </div>
       </div>
     `;
-  }).join('');
+    })
+    .join("");
 }
 
 // Statistics
@@ -373,9 +408,13 @@ function updateStats() {
   const total = filteredParticipants.length;
   const checked = filteredParticipants.filter((p) => p.checked).length;
   const notChecked = total - checked;
-  
+
   // Count unique teams
-  const teams = new Set(filteredParticipants.filter(p => p.team_num).map(p => `${p.team_num}_${p.session}`));
+  const teams = new Set(
+    filteredParticipants
+      .filter((p) => p.team_num)
+      .map((p) => `${p.team_num}_${p.session}`)
+  );
   const totalTeams = teams.size;
 
   document.getElementById("totalParticipants").textContent = total;
@@ -387,28 +426,36 @@ function updateStats() {
   const statuses = ["Competitor", "Jury"];
   statuses.forEach((status) => {
     const statusLower = status.toLowerCase();
-    const statusParticipants = filteredParticipants.filter((p) => p.status === status);
+    const statusParticipants = filteredParticipants.filter(
+      (p) => p.status === status
+    );
     const statusTotal = statusParticipants.length;
     const statusChecked = statusParticipants.filter((p) => p.checked).length;
-    const percentage = statusTotal > 0 ? (statusChecked / statusTotal) * 100 : 0;
+    const percentage =
+      statusTotal > 0 ? (statusChecked / statusTotal) * 100 : 0;
 
     const countEl = document.getElementById(`${statusLower}Count`);
     if (countEl) {
       countEl.textContent = statusTotal;
       document.getElementById(`${statusLower}Total`).textContent = statusTotal;
-      document.getElementById(`${statusLower}Checked`).textContent = statusChecked;
-      document.getElementById(`${statusLower}Progress`).style.width = `${percentage}%`;
+      document.getElementById(`${statusLower}Checked`).textContent =
+        statusChecked;
+      document.getElementById(
+        `${statusLower}Progress`
+      ).style.width = `${percentage}%`;
     }
   });
-  
+
   // Education level breakdown
   const educationLevels = [
-    { key: 'secondary', session: 'secondary' },
-    { key: 'higher', session: 'higher' }
+    { key: "secondary", session: "secondary" },
+    { key: "higher", session: "higher" },
   ];
-  
+
   educationLevels.forEach(({ key, session }) => {
-    const eduParticipants = filteredParticipants.filter((p) => p.session === session);
+    const eduParticipants = filteredParticipants.filter(
+      (p) => p.session === session
+    );
     const eduTotal = eduParticipants.length;
     const eduChecked = eduParticipants.filter((p) => p.checked).length;
     const percentage = eduTotal > 0 ? (eduChecked / eduTotal) * 100 : 0;
@@ -446,11 +493,13 @@ document.addEventListener("DOMContentLoaded", function () {
   loadInitialData();
   updateDateTime();
   setInterval(updateDateTime, 1000);
-  
+
   // Enter key support for search
-  document.getElementById("searchInput").addEventListener("keypress", function(e) {
-    if (e.key === "Enter") {
-      searchParticipant();
-    }
-  });
+  document
+    .getElementById("searchInput")
+    .addEventListener("keypress", function (e) {
+      if (e.key === "Enter") {
+        searchParticipant();
+      }
+    });
 });

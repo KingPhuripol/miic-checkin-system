@@ -16,7 +16,7 @@ const initialMiicParticipants =
   },
   {
     "id": 2,
-    "name": "นาย ปัญญ์ แซ่จาง",
+    "name": "ปัญญ์ แซ่จาง",
     "email": "punsaejang@gmail.com",
     "phone": "0993054054",
     "team_num": 2,
@@ -30,7 +30,7 @@ const initialMiicParticipants =
   },
   {
     "id": 3,
-    "name": "นางสาว ณัฐธภัสสร ผลสวัสดิ์",
+    "name": "ณัฐธภัสสร ผลสวัสดิ์",
     "email": "iounpholsawat@gmail.com",
     "phone": "-",
     "team_num": 2,
@@ -44,7 +44,7 @@ const initialMiicParticipants =
   },
   {
     "id": 4,
-    "name": "นางสาว นรมน นุชพงษ์",
+    "name": "นรมน นุชพงษ์",
     "email": "noramont.nuc_g34@mwit.ac.th",
     "phone": "-",
     "team_num": 2,
@@ -100,7 +100,7 @@ const initialMiicParticipants =
   },
   {
     "id": 8,
-    "name": "นายศักย์ศรณ์ ไทยเจียม",
+    "name": "ศักย์ศรณ์ ไทยเจียม",
     "email": "saksorn.tj@gmail.com",
     "phone": "0630180025",
     "team_num": 4,
@@ -114,7 +114,7 @@ const initialMiicParticipants =
   },
   {
     "id": 9,
-    "name": "นางสาวณิชา ตั้งดำเนินสวัสดิ์",
+    "name": "ณิชา ตั้งดำเนินสวัสดิ์",
     "email": "Nichatungdumnunsawad@gmail.com",
     "phone": "-",
     "team_num": 4,
@@ -128,7 +128,7 @@ const initialMiicParticipants =
   },
   {
     "id": 10,
-    "name": "น.ส.ปัญญ์พริมา ศรีสนิท",
+    "name": "ปัญญ์พริมา ศรีสนิท",
     "email": "Panprima.s@gmail.com",
     "phone": "-",
     "team_num": 4,
@@ -142,7 +142,7 @@ const initialMiicParticipants =
   },
   {
     "id": 11,
-    "name": "นางสาวลัลนา จิตต์ประไพย",
+    "name": "ลัลนา จิตต์ประไพย",
     "email": "6405717@pccnst.ac.th",
     "phone": "0640763535",
     "team_num": 5,
@@ -156,7 +156,7 @@ const initialMiicParticipants =
   },
   {
     "id": 12,
-    "name": "นางสาวสัตตบงกช บุญณจันทร์",
+    "name": "สัตตบงกช บุญณจันทร์",
     "email": "6706348@pccnst.ac.th",
     "phone": "-",
     "team_num": 5,
@@ -170,7 +170,7 @@ const initialMiicParticipants =
   },
   {
     "id": 13,
-    "name": "นางสาววรอัคริมาษ์ วุฒิวงศ์",
+    "name": "วรอัคริมาษ์ วุฒิวงศ์",
     "email": "6405690@pccnst.ac.th",
     "phone": "-",
     "team_num": 5,
@@ -184,7 +184,7 @@ const initialMiicParticipants =
   },
   {
     "id": 14,
-    "name": "นายวงศ์วริศ จิระพิชชานันท์",
+    "name": "วงศ์วริศ จิระพิชชานันท์",
     "email": "chompuphansuwan@gmail.com",
     "phone": "0863881645",
     "team_num": 6,
@@ -240,7 +240,7 @@ const initialMiicParticipants =
   },
   {
     "id": 18,
-    "name": "นายสุวภัทร วานิชศุภชัย",
+    "name": "สุวภัทร วานิชศุภชัย",
     "email": "suwapatva2@gmail.com",
     "phone": "099-4265297",
     "team_num": 8,
@@ -254,7 +254,7 @@ const initialMiicParticipants =
   },
   {
     "id": 19,
-    "name": "นายศิรวริศ บุญโนนแต้",
+    "name": "ศิรวริศ บุญโนนแต้",
     "email": "sss478901@gmail.com",
     "phone": "-",
     "team_num": 8,
@@ -268,7 +268,7 @@ const initialMiicParticipants =
   },
   {
     "id": 20,
-    "name": "นายสุกฤษฎิ์ หล่าเพชร",
+    "name": "สุกฤษฎิ์ หล่าเพชร",
     "email": "sukeelaphet@gmail.com",
     "phone": "-",
     "team_num": 8,
@@ -282,7 +282,7 @@ const initialMiicParticipants =
   },
   {
     "id": 21,
-    "name": "นายศุภฤกษ์ อินทรา",
+    "name": "ศุภฤกษ์ อินทรา",
     "email": "supalerk2008@gmail.com",
     "phone": "-",
     "team_num": 8,
@@ -296,7 +296,7 @@ const initialMiicParticipants =
   },
   {
     "id": 22,
-    "name": "นายวีราวรรธนุ์ กันธิพันธ์",
+    "name": "วีราวรรธนุ์ กันธิพันธ์",
     "email": "veerawatt.nice@gmail.com",
     "phone": "0661090154",
     "team_num": 9,
@@ -310,7 +310,7 @@ const initialMiicParticipants =
   },
   {
     "id": 23,
-    "name": "นายธรรศดนย์ ธนวัฒน์กันยากุล",
+    "name": "ธรรศดนย์ ธนวัฒน์กันยากุล",
     "email": "ninethatsadon.tkl@gmail.com",
     "phone": "-",
     "team_num": 9,
@@ -352,7 +352,7 @@ const initialMiicParticipants =
   },
   {
     "id": 26,
-    "name": "นางสาวเมลาณี เฟื่องเพียร",
+    "name": "เมลาณี เฟื่องเพียร",
     "email": "klaire.melanie@gmail.com",
     "phone": "0956754099",
     "team_num": 10,
@@ -366,7 +366,7 @@ const initialMiicParticipants =
   },
   {
     "id": 27,
-    "name": "นายปาณัสม์ ทองสา",
+    "name": "ปาณัสม์ ทองสา",
     "email": "panasthongsaxd@gmail.com",
     "phone": "-",
     "team_num": 10,
@@ -395,21 +395,6 @@ const initialMiicParticipants =
   },
   {
     "id": 29,
-    "name": "ผศ.ดร.ทินกร ปงธิยา",
-    "email": "-",
-    "phone": "-",
-    "team_num": null,
-    "team_name": "-",
-    "institution": "-",
-    "advisor": "-",
-    "status": "Jury",
-    "education_level": "มัธยมศึกษา",
-    "session": "secondary",
-    "participation_status": "เข้าร่วม",
-    "note": "ยังไม่ชัวร์"
-  },
-  {
-    "id": 30,
     "name": "ผศ.สมศรี ดาวฉาย",
     "email": "-",
     "phone": "-",
@@ -424,7 +409,7 @@ const initialMiicParticipants =
     "note": "ลงทะเบียนฟังงานเสวนามาด้วย"
   },
   {
-    "id": 31,
+    "id": 30,
     "name": "ผศ.ดร.สอนกิจจา บุญโปร่ง",
     "email": "-",
     "phone": "-",
@@ -436,10 +421,10 @@ const initialMiicParticipants =
     "education_level": "มัธยมศึกษา",
     "session": "secondary",
     "participation_status": "เข้าร่วม",
-    "note": "ยังไม่ชัวร์"
+    "note": "-"
   },
   {
-    "id": 32,
+    "id": 31,
     "name": "คุณศรัณย์ ธรรมาศิริกุล",
     "email": "-",
     "phone": "-",
@@ -454,7 +439,7 @@ const initialMiicParticipants =
     "note": "วิทยากร 18 เช้า"
   },
   {
-    "id": 33,
+    "id": 32,
     "name": "สุปรียา ภัทรชนน",
     "email": "supreeya.patch@gmail.com",
     "phone": "-",
@@ -468,7 +453,7 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 34,
+    "id": 33,
     "name": "สิรินญา จิราสิต",
     "email": "jirasitsirinya@gmail.com",
     "phone": "-",
@@ -482,7 +467,7 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 35,
+    "id": 34,
     "name": "ภัทรธร หาญศึกสกุล",
     "email": "pataratonh@gmail.com",
     "phone": "649514625.0",
@@ -496,7 +481,7 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 36,
+    "id": 35,
     "name": "รัชพล สุวรรณเกิด",
     "email": "earth5556789@gmail.com",
     "phone": "-",
@@ -510,8 +495,8 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 37,
-    "name": "นายจิราพัทธ์ พันธ์แซง",
+    "id": 36,
+    "name": "จิราพัทธ์ พันธ์แซง",
     "email": "jiraphat_pun@cmu.ac.th",
     "phone": "882733563.0",
     "team_num": 3,
@@ -524,8 +509,8 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 38,
-    "name": "นายอินอาร์ม เอกอัคราภิบาล",
+    "id": 37,
+    "name": "อินอาร์ม เอกอัคราภิบาล",
     "email": "inarm_e@cmu.ac.th",
     "phone": "-",
     "team_num": 3,
@@ -538,8 +523,8 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 39,
-    "name": "นางสาวนิรินธนา อึ้งอุดรภักดี",
+    "id": 38,
+    "name": "นิรินธนา อึ้งอุดรภักดี",
     "email": "nirinthana_u@cmu.ac.th",
     "phone": "-",
     "team_num": 3,
@@ -552,7 +537,7 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 40,
+    "id": 39,
     "name": "นนทกร บรรลือศรีเรือง",
     "email": "nontakorn.bun@edu.cra.ac.th",
     "phone": "802501470.0",
@@ -566,7 +551,7 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 41,
+    "id": 40,
     "name": "ภัทราภรณ์ หวังสิทธิเดช",
     "email": "pattraphorn.wan@edu.cra.ac.th",
     "phone": "-",
@@ -580,7 +565,7 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 42,
+    "id": 41,
     "name": "ภัณฑิลา เจริญกิจ",
     "email": "puntila.cha@edu.cra.ac.th",
     "phone": "-",
@@ -594,7 +579,7 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 43,
+    "id": 42,
     "name": "พงศกร เจียมประเสริฐ",
     "email": "pongsakornjiam36@gmail.com",
     "phone": "657745610.0",
@@ -608,7 +593,7 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 44,
+    "id": 43,
     "name": "สุภาวดี พูลพ่วง",
     "email": "sja29796@gmail.com",
     "phone": "-",
@@ -622,8 +607,8 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 45,
-    "name": "นายบุรธัช บุตรแสง",
+    "id": 44,
+    "name": "บุรธัช บุตรแสง",
     "email": "Buratach2550@gmail.com",
     "phone": "-",
     "team_num": 5,
@@ -636,7 +621,7 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 46,
+    "id": 45,
     "name": "ณฐปวิชญ์ สุวราก้องเกียรติ",
     "email": "saisworking4@gmail.com",
     "phone": "-",
@@ -650,7 +635,7 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 47,
+    "id": 46,
     "name": "จิรวัฒณ์ ราชพงศ์",
     "email": "jr.081455@gmail.com",
     "phone": "831137614.0",
@@ -664,7 +649,7 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 48,
+    "id": 47,
     "name": "วสวัตติ์ ลี้สมบุญ",
     "email": "Wastlesobn@gmail.com",
     "phone": "-",
@@ -678,7 +663,7 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 49,
+    "id": 48,
     "name": "เปรมอชิตะ ดาวเลิศ",
     "email": "prameachita@gmail.com",
     "phone": "-",
@@ -692,7 +677,7 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 50,
+    "id": 49,
     "name": "กัญญ์สินีณัฐ องค์ศิริพร",
     "email": "kansineenut@hotmail.com",
     "phone": "825474371.0",
@@ -706,7 +691,7 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 51,
+    "id": 50,
     "name": "กัญชญาลักษณ์ องค์ศิริพร",
     "email": "ifeelveryhappy@hotmail.com",
     "phone": "-",
@@ -720,8 +705,8 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 52,
-    "name": "นายธนภณ ธนาดุลเปรมเดช",
+    "id": 51,
+    "name": "ธนภณ ธนาดุลเปรมเดช",
     "email": "thanaponchanal@gmail.com",
     "phone": "616385394.0",
     "team_num": 8,
@@ -734,8 +719,8 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 53,
-    "name": "Settapun Laoaree (นายเสฎฐพันธ์ เหล่าอารีย์)",
+    "id": 52,
+    "name": "เสฎฐพันธ์ เหล่าอารีย์",
     "email": "settapun.work@gmail.com",
     "phone": "-",
     "team_num": 8,
@@ -748,7 +733,7 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 54,
+    "id": 53,
     "name": "พรเกียรติ รอบคอบ",
     "email": "66010523@kmitl.ac.th",
     "phone": "620045282.0",
@@ -762,7 +747,7 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 55,
+    "id": 54,
     "name": "วสุธร ทาสี",
     "email": "66010758@kmitl.ac.th",
     "phone": "-",
@@ -776,7 +761,7 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 56,
+    "id": 55,
     "name": "ฐิติพันธุ์ สอนโคตร",
     "email": "66011344@kmitl.ac.th",
     "phone": "-",
@@ -790,7 +775,7 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 57,
+    "id": 56,
     "name": "นนทวัฒน์ แซ่ตัน",
     "email": "66010395@kmitl.ac.th",
     "phone": "-",
@@ -804,7 +789,7 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 58,
+    "id": 57,
     "name": "นรภัทร คุณะพันธ์",
     "email": "chaithat2548@gmail.com",
     "phone": "987956269.0",
@@ -818,7 +803,7 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 59,
+    "id": 58,
     "name": "เบญจามินทร์ ลิ่วนภโรจน์",
     "email": "phing.ing.8@gmail.com",
     "phone": "-",
@@ -832,7 +817,7 @@ const initialMiicParticipants =
     "participation_status": "เข้าร่วม"
   },
   {
-    "id": 60,
+    "id": 59,
     "name": "ศ.นพ.สมเกียรติ วัฒนศิริชัยกุล",
     "email": "-",
     "phone": "-",
@@ -847,7 +832,7 @@ const initialMiicParticipants =
     "note": "ผู้ดำเนินรายการ(เสวนา) วันที่ 18 เช้า"
   },
   {
-    "id": 61,
+    "id": 60,
     "name": "ผศ.ดร.หยาดนภา ผาเจริญ",
     "email": "-",
     "phone": "-",
@@ -862,7 +847,7 @@ const initialMiicParticipants =
     "note": "ผู้ดำเนินรายการ วันที่ 17 บ่าย"
   },
   {
-    "id": 62,
+    "id": 61,
     "name": "รศ.ดร.อนรรฆ ขันธะชวนะ",
     "email": "-",
     "phone": "-",
@@ -877,7 +862,7 @@ const initialMiicParticipants =
     "note": "-"
   },
   {
-    "id": 63,
+    "id": 62,
     "name": "คุณภวนันท์ ฤทธาเวช",
     "email": "-",
     "phone": "-",

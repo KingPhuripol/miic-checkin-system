@@ -4,17 +4,17 @@ import json
 
 data_dir = "/Users/king_phuripol/Work/SmartLab/MIIC/Data"
 files = [
-    "17_morning.csv",
-    "17_afternoon_room1.csv",
-    "17_afternoon_room2.csv",
-    "18_all_day.csv"
+    "17_jan_morning.csv",
+    "17_jan_afternoon_room1.csv",
+    "17_jan_afternoon_room2.csv",
+    "18_jan_all_day.csv"
 ]
 
 session_map = {
-    "17_morning.csv": "17_morning",
-    "17_afternoon_room1.csv": "17_afternoon_1",
-    "17_afternoon_room2.csv": "17_afternoon_2",
-    "18_all_day.csv": "18_all_day"
+    "17_jan_morning.csv": "17_morning",
+    "17_jan_afternoon_room1.csv": "17_afternoon_1",
+    "17_jan_afternoon_room2.csv": "17_afternoon_2",
+    "18_jan_all_day.csv": "18_all_day"
 }
 
 

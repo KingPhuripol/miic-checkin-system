@@ -6,7 +6,7 @@
 
 body {
   font-family: "Prompt", sans-serif;
-  background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 50%, #6D28D9 100%);
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 50%, #6d28d9 100%);
   min-height: 100vh;
   padding: 20px;
 }
@@ -41,8 +41,12 @@ body {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .logo-section {
@@ -52,7 +56,7 @@ body {
 }
 
 .medical-icon {
-  background: linear-gradient(135deg, #8B5CF6, #7C3AED);
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
   padding: 10px;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
@@ -110,7 +114,7 @@ body {
 
 .session-selector select:focus {
   outline: none;
-  border-color: #8B5CF6;
+  border-color: #8b5cf6;
   box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
 }
 
@@ -141,7 +145,7 @@ body {
 }
 
 .tab-btn.active {
-  background: linear-gradient(135deg, #8B5CF6, #7C3AED);
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
   color: white;
 }
 
@@ -187,13 +191,13 @@ body {
 
 .search-box input:focus {
   outline: none;
-  border-color: #8B5CF6;
+  border-color: #8b5cf6;
   box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.1);
 }
 
 .search-box button {
   padding: 18px 40px;
-  background: linear-gradient(135deg, #8B5CF6, #7C3AED);
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
   color: white;
   border: none;
   border-radius: 15px;
@@ -241,7 +245,7 @@ body {
 }
 
 .status-badge.competitor {
-  background: linear-gradient(135deg, #8B5CF6, #7C3AED);
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
 }
 
 .status-badge.jury {
@@ -308,7 +312,7 @@ body {
 .checklist-item:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  border-color: #8B5CF6;
+  border-color: #8b5cf6;
 }
 
 .checklist-item.checked {
@@ -324,7 +328,7 @@ body {
 }
 
 .checklist-number {
-  background: #8B5CF6;
+  background: #8b5cf6;
   color: white;
   width: 35px;
   height: 35px;
@@ -417,7 +421,7 @@ body {
 
 .team-number {
   font-weight: 600;
-  color: #8B5CF6;
+  color: #8b5cf6;
 }
 
 .team-name {
@@ -450,7 +454,7 @@ body {
 }
 
 .member-count {
-  color: #8B5CF6;
+  color: #8b5cf6;
   font-weight: 600;
 }
 
@@ -523,7 +527,7 @@ body {
 }
 
 .stat-card.total {
-  background: linear-gradient(135deg, #8B5CF6, #7C3AED);
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
   color: white;
 }
 
@@ -607,7 +611,7 @@ body {
 }
 
 .progress-fill.competitor-fill {
-  background: linear-gradient(135deg, #8B5CF6, #7C3AED);
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
 }
 
 .progress-fill.jury-fill {
@@ -705,7 +709,7 @@ body {
   font-size: 0.9rem;
   font-weight: 600;
   margin-bottom: 15px;
-  background: #8B5CF6;
+  background: #8b5cf6;
   color: white;
 }
 
@@ -716,7 +720,7 @@ body {
 }
 
 .modal-btn {
-  background: #8B5CF6;
+  background: #8b5cf6;
   color: white;
   border: none;
   padding: 12px 40px;
@@ -730,7 +734,7 @@ body {
 }
 
 .modal-btn:hover {
-  background: #7C3AED;
+  background: #7c3aed;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3);
 }

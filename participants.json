@@ -67,7 +67,7 @@
     "phone": "0814840933",
     "status": "VISITOR",
     "org": "ThaiBMI",
-    "note": "-",
+    "note": "VIP+กรรมการ MIIC",
     "session": "17_morning",
     "source": "main_list"
   },
@@ -844,10 +844,10 @@
     "title": "นางสาว",
     "name": "วัลลภา ตันติจรัสกุลสิริ",
     "email": "wanlapa.tanti@gmail.com",
-    "phone": "0846761648",
+    "phone": "0846761548",
     "status": "VISITOR",
     "org": "คณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย",
-    "note": "เบอร์ติดต่อผิด",
+    "note": "-",
     "session": "17_morning",
     "source": "main_list"
   },
@@ -877,18 +877,102 @@
   },
   {
     "id": 74,
+    "title": "ทีปรึกษา",
+    "name": "สำริด จันทานา",
+    "email": "addfag155@gmail.com",
+    "phone": "0865409676",
+    "status": "VISITOR",
+    "org": "เจมเมดิคอล",
+    "note": "-",
+    "session": "17_morning",
+    "source": "main_list"
+  },
+  {
+    "id": 75,
+    "title": "ผจก.",
+    "name": "ทวีวัฒน์ แสนดี",
+    "email": "leetong8989@gmail.com",
+    "phone": "0802290720",
+    "status": "VISITOR",
+    "org": "บลูฟามาซี",
+    "note": "-",
+    "session": "17_morning",
+    "source": "main_list"
+  },
+  {
+    "id": 76,
+    "title": "นาย",
+    "name": "ธนศักดิ์ ทาคำ",
+    "email": "tanasak.hor@gmail.com",
+    "phone": "0825489237",
+    "status": "VISITOR",
+    "org": "นักวิจัยอิสระ",
+    "note": "-",
+    "session": "17_morning",
+    "source": "main_list"
+  },
+  {
+    "id": 77,
+    "title": "นางสาว",
+    "name": "ลัษมา สกลเกียรติ",
+    "email": "-",
+    "phone": "-",
+    "status": "VISITOR",
+    "org": "นักวิจัยอิสระ",
+    "note": "ผู้ติดตาม",
+    "session": "17_morning",
+    "source": "main_list"
+  },
+  {
+    "id": 78,
+    "title": "-",
+    "name": "Supada Rattagan",
+    "email": "-",
+    "phone": "-",
+    "status": "VISITOR",
+    "org": "KMITL",
+    "note": "ผู้ติดตาม อจ.วิบูลย์",
+    "session": "17_morning",
+    "source": "main_list"
+  },
+  {
+    "id": 79,
+    "title": "ผศ.ดร.",
+    "name": "ปัญจพร วงศ์วิทยากูล",
+    "email": "panjap_w@hotmail.com",
+    "phone": "0819321501",
+    "status": "VISITOR",
+    "org": "คณะทันตแพทยศาสตร์ มหาวิทยาลัยธรรมศาสตร์",
+    "note": "-",
+    "session": "17_morning",
+    "source": "main_list"
+  },
+  {
+    "id": 80,
+    "title": "Prof.",
+    "name": "Wibool Piyawattanametha",
+    "email": "wibool@gmail.com",
+    "phone": "0879365000",
+    "status": "SPEAKER",
+    "org": "KMITL",
+    "note": "เป็นวิทยากร",
+    "session": "17_morning",
+    "source": "main_list"
+  },
+  {
+    "id": 81,
     "title": "รศ.ดร.",
     "name": "อนรรฆ ขันธชวนะ",
     "email": "-",
     "phone": "-",
-    "status": "VVIP",
+    "status": "VIP",
     "org": "-",
     "note": "วิทยากร (หัวหน้าศูนย์)",
     "session": "17_morning",
     "source": "vip_list"
   },
   {
-    "id": 75,
+    "id": 82,
     "title": "คุณ",
     "name": "ภวนันท์ ฤทธาเวช",
     "email": "-",
@@ -900,83 +984,71 @@
     "source": "vip_list"
   },
   {
-    "id": 76,
+    "id": 83,
     "title": "ดร.",
     "name": "วิภารัตน์ ดีอ่อง",
     "email": "-",
     "phone": "-",
-    "status": "VVIP",
+    "status": "VIP",
     "org": "-",
     "note": "ประธานกล่าวเปิดงาน",
     "session": "17_morning",
     "source": "vip_list"
   },
   {
-    "id": 77,
-    "title": "ศ.นพ.",
+    "id": 84,
+    "title": "ศ.เกียรติคุณ ดร. นพ.",
     "name": "ประสิทธิ์ วัฒนาภา",
     "email": "-",
     "phone": "-",
-    "status": "VVIP",
+    "status": "SPEAKER, VIP",
     "org": "-",
     "note": "-",
     "session": "17_morning",
     "source": "vip_list"
   },
   {
-    "id": 78,
+    "id": 85,
     "title": "ศ.ดร.",
     "name": "ฉัตรเฉลิม อิศรางกูร ณ อยุธยา",
     "email": "-",
     "phone": "-",
-    "status": "VIP",
+    "status": "VIP, SPEAKER",
     "org": "-",
     "note": "-",
     "session": "17_morning",
     "source": "vip_list"
   },
   {
-    "id": 79,
+    "id": 86,
     "title": "คุณ",
     "name": "วินิจ ฤทธิ์ฉิ้ม",
     "email": "-",
     "phone": "-",
-    "status": "VIP",
+    "status": "VIP, SPEAKER",
     "org": "-",
     "note": "-",
     "session": "17_morning",
     "source": "vip_list"
   },
   {
-    "id": 80,
-    "title": "ภญ.",
-    "name": "สุภัทรา บุญเสริม",
-    "email": "-",
-    "phone": "-",
-    "status": "VIP",
-    "org": "-",
-    "note": "-",
-    "session": "17_morning",
-    "source": "vip_list"
-  },
-  {
-    "id": 81,
-    "title": "ศ.นพ.",
-    "name": "สุทธิพร จิตต์มิตรภาพ",
-    "email": "-",
-    "phone": "-",
-    "status": "VIP",
-    "org": "-",
-    "note": "-",
-    "session": "17_morning",
-    "source": "vip_list"
-  },
-  {
-    "id": 82,
+    "id": 87,
     "title": "ผศ.ดร.",
     "name": "ธัญญานุภาพ อานันทนะ",
     "email": "-",
     "phone": "-",
+    "status": "VIP, SPEAKER",
+    "org": "-",
+    "note": "-",
+    "session": "17_morning",
+    "source": "vip_list"
+  },
+  {
+    "id": 88,
+    "title": "รศ.ดร.",
+    "name": "อนรรฆ ขันธชวนะ",
+    "email": "-",
+    "phone": "-",
     "status": "VIP",
     "org": "-",
     "note": "-",
@@ -984,7 +1056,7 @@
     "source": "vip_list"
   },
   {
-    "id": 83,
+    "id": 89,
     "title": "นางสาว",
     "name": "ธนารัตน์ เฉลิมสุข",
     "email": "tanarat@hsri.or.th",
@@ -996,7 +1068,7 @@
     "source": "main_list"
   },
   {
-    "id": 84,
+    "id": 90,
     "title": "นางสาว",
     "name": "ชมพูนุช อนุศาสน์สิทธิกิจ",
     "email": "Chompoonuch@tistr.or.th",
@@ -1008,7 +1080,7 @@
     "source": "main_list"
   },
   {
-    "id": 85,
+    "id": 91,
     "title": "-",
     "name": "อนงค์นาฏ ขาวสังข์",
     "email": "-",
@@ -1020,7 +1092,7 @@
     "source": "main_list"
   },
   {
-    "id": 86,
+    "id": 92,
     "title": "-",
     "name": "ปาริฉัตร ถาวรชาติ",
     "email": "-",
@@ -1032,7 +1104,7 @@
     "source": "main_list"
   },
   {
-    "id": 87,
+    "id": 93,
     "title": "อาจารย์ ดร.",
     "name": "วิมลวรรณ เลิศวงศ์เผ่าพันธุ์",
     "email": "wimonwan@g.swu.ac.th",
@@ -1044,19 +1116,19 @@
     "source": "main_list"
   },
   {
-    "id": 88,
+    "id": 94,
     "title": "ผศ.",
     "name": "สมศรี ดาวฉาย",
     "email": "sumuetu37@gmail.com",
     "phone": "0814840933",
     "status": "VISITOR",
     "org": "ThaiBMI",
-    "note": "รอยืนยัน สถานะป้าย",
+    "note": "Vip  +กรรมการ MIIC",
     "session": "17_afternoon_1",
     "source": "main_list"
   },
   {
-    "id": 89,
+    "id": 95,
     "title": "ผศ.นพ.",
     "name": "Parinya Supanijwattana",
     "email": "parinya_s@emerald-nw.com",
@@ -1068,7 +1140,7 @@
     "source": "main_list"
   },
   {
-    "id": 90,
+    "id": 96,
     "title": "ภญ.",
     "name": "นลิญา มณีสว่างวงศ์",
     "email": "Naliya.ma@nhealth-asia.com",
@@ -1080,7 +1152,7 @@
     "source": "main_list"
   },
   {
-    "id": 91,
+    "id": 97,
     "title": "-",
     "name": "วัศรัชต์ สิงหกมล",
     "email": "-",
@@ -1092,7 +1164,7 @@
     "source": "main_list"
   },
   {
-    "id": 92,
+    "id": 98,
     "title": "ดร.",
     "name": "ชณชนก ลีฬหาวงศ์",
     "email": "-",
@@ -1104,7 +1176,7 @@
     "source": "main_list"
   },
   {
-    "id": 93,
+    "id": 99,
     "title": "นางสาว",
     "name": "นัตวิไล อุทุทพฤกษ์พร",
     "email": "pae@bin-dai.com",
@@ -1116,7 +1188,7 @@
     "source": "main_list"
   },
   {
-    "id": 94,
+    "id": 100,
     "title": "นาง",
     "name": "ภัททราภรณ์ ปาจริยพง์",
     "email": "-",
@@ -1128,7 +1200,7 @@
     "source": "main_list"
   },
   {
-    "id": 95,
+    "id": 101,
     "title": "นาย",
     "name": "สุทัศน์ อัศวินนิมิตร",
     "email": "suthatachwinnimit17@gmail.com",
@@ -1140,7 +1212,7 @@
     "source": "main_list"
   },
   {
-    "id": 96,
+    "id": 102,
     "title": "นาง",
     "name": "อัมพร  แซ่เล็ก",
     "email": "Umporn249360@gmail.com",
@@ -1152,7 +1224,7 @@
     "source": "main_list"
   },
   {
-    "id": 97,
+    "id": 103,
     "title": "สพ.ญ.",
     "name": "สุณิชา ชานวาทิก",
     "email": "Sunicha@tcels.or.th",
@@ -1164,7 +1236,7 @@
     "source": "main_list"
   },
   {
-    "id": 98,
+    "id": 104,
     "title": "ศาสตราจารย์คลินิก นายแพทย์",
     "name": "ดิฐกานต์ บริบูรณ์หิรัญสาร",
     "email": "dittakarn.bor@mahidol.ac.th",
@@ -1176,7 +1248,7 @@
     "source": "main_list"
   },
   {
-    "id": 99,
+    "id": 105,
     "title": "นางสาว",
     "name": "ฉัตรธิชา บริบูรณ์หิรัญสาร",
     "email": "-",
@@ -1188,7 +1260,7 @@
     "source": "main_list"
   },
   {
-    "id": 100,
+    "id": 106,
     "title": "นาย",
     "name": "โยวิพัจน์ เสนะวีณิน",
     "email": "yovipan@gmail.com",
@@ -1200,7 +1272,7 @@
     "source": "main_list"
   },
   {
-    "id": 101,
+    "id": 107,
     "title": "รศ.",
     "name": "Santi Asawasripongtorn",
     "email": "fengsta@gmail.com",
@@ -1212,7 +1284,7 @@
     "source": "main_list"
   },
   {
-    "id": 102,
+    "id": 108,
     "title": "รศ.ดร.",
     "name": "ชาญไชย ไทยเจียม",
     "email": "chanchait@g.swu.ac.th",
@@ -1224,7 +1296,7 @@
     "source": "main_list"
   },
   {
-    "id": 103,
+    "id": 109,
     "title": "นางสาว",
     "name": "เปรมวดี วงค์ประเสริฐ",
     "email": "premwadi.wo@nhealth-asia.com",
@@ -1236,7 +1308,7 @@
     "source": "main_list"
   },
   {
-    "id": 104,
+    "id": 110,
     "title": "นางสาว",
     "name": "นัฐวดี เดชชัยยัญ",
     "email": "nutwadeed@outlook.com",
@@ -1248,7 +1320,7 @@
     "source": "main_list"
   },
   {
-    "id": 105,
+    "id": 111,
     "title": "ผศ.ดร.",
     "name": "รุ่งทิพย์ ดวงแก้ว",
     "email": "rungtip.d@allied.tu.ac.th",
@@ -1260,7 +1332,7 @@
     "source": "main_list"
   },
   {
-    "id": 106,
+    "id": 112,
     "title": "นางสาว",
     "name": "ดวงกมล วรเกษมศักดิ์",
     "email": "Dky.dta@gmail.com",
@@ -1272,7 +1344,7 @@
     "source": "main_list"
   },
   {
-    "id": 107,
+    "id": 113,
     "title": "นาย",
     "name": "ภูครินทร์  ทองเกลี้ยง",
     "email": "Pukarin.to@bdms.co.th",
@@ -1284,7 +1356,7 @@
     "source": "main_list"
   },
   {
-    "id": 108,
+    "id": 114,
     "title": "นางสาว",
     "name": "อรอนงค์ คาวา",
     "email": "on-anong.kawa@g.swu.ac.th",
@@ -1296,7 +1368,7 @@
     "source": "main_list"
   },
   {
-    "id": 109,
+    "id": 115,
     "title": "นางสาว",
     "name": "อมรา อยู่ทน",
     "email": "ammarm.yo@Nhealth-asia.com",
@@ -1308,7 +1380,7 @@
     "source": "main_list"
   },
   {
-    "id": 110,
+    "id": 116,
     "title": "นางสาว",
     "name": "วรัมพร จิตต์ธรร",
     "email": "-",
@@ -1320,7 +1392,7 @@
     "source": "main_list"
   },
   {
-    "id": 111,
+    "id": 117,
     "title": "นาย",
     "name": "พีร์ สุทธิศรีปก",
     "email": "-",
@@ -1332,7 +1404,7 @@
     "source": "main_list"
   },
   {
-    "id": 112,
+    "id": 118,
     "title": "ดร.",
     "name": "สายทิพย์ โสรัตน์",
     "email": "saitips@gmail.com",
@@ -1344,7 +1416,7 @@
     "source": "main_list"
   },
   {
-    "id": 113,
+    "id": 119,
     "title": "ดร.",
     "name": "วรรณี ฉินศิริกุล",
     "email": "-",
@@ -1356,7 +1428,7 @@
     "source": "main_list"
   },
   {
-    "id": 114,
+    "id": 120,
     "title": "ผู้จัดการ",
     "name": "ชลาลัย ซัตตั้น",
     "email": "chalalai.sutton@mtec.or.th",
@@ -1368,7 +1440,7 @@
     "source": "main_list"
   },
   {
-    "id": 115,
+    "id": 121,
     "title": "ผศ.",
     "name": "สุนิษา โอบอ้อม",
     "email": "sunisa.aobaom@gmail.com",
@@ -1380,7 +1452,7 @@
     "source": "main_list"
   },
   {
-    "id": 116,
+    "id": 122,
     "title": "รศ.ดร.",
     "name": "หิรัญญา ศรีธาตุ",
     "email": "Hiranya.s@allied.tu.ac.th",
@@ -1392,7 +1464,7 @@
     "source": "main_list"
   },
   {
-    "id": 117,
+    "id": 123,
     "title": "นาย",
     "name": "ชัยวัฒน์ ไสลวงษ์",
     "email": "Chaiwat.offline@gmail.com",
@@ -1404,7 +1476,7 @@
     "source": "main_list"
   },
   {
-    "id": 118,
+    "id": 124,
     "title": "นางสาว",
     "name": "พัชราภรณ์ บุญชู",
     "email": "Patcharaporn.b@dmsc.mail.go.th",
@@ -1416,7 +1488,7 @@
     "source": "main_list"
   },
   {
-    "id": 119,
+    "id": 125,
     "title": "ดร.",
     "name": "ฐิติวัสส์ สุวคนธ์",
     "email": "dhitiwass.s@dmsc.mail.go.th",
@@ -1428,7 +1500,7 @@
     "source": "main_list"
   },
   {
-    "id": 120,
+    "id": 126,
     "title": "นางสาว",
     "name": "อัจฉราพร ดำบัว",
     "email": "Acharaporn.d@dmsc.mail.go.th",
@@ -1440,7 +1512,7 @@
     "source": "main_list"
   },
   {
-    "id": 121,
+    "id": 127,
     "title": "นางสาว",
     "name": "ปัทมา พรมจันทร์",
     "email": "prommajun.p@gmail.com",
@@ -1452,7 +1524,7 @@
     "source": "main_list"
   },
   {
-    "id": 122,
+    "id": 128,
     "title": "รองศาสตราจารย์",
     "name": "สมชาติ แตรตุลาการ",
     "email": "Somchat@tu.ac.th",
@@ -1464,7 +1536,7 @@
     "source": "main_list"
   },
   {
-    "id": 123,
+    "id": 129,
     "title": "นาย",
     "name": "วงศ์วิทย์  เสนะวงศ์",
     "email": "wongwit@g.swu.ac.th",
@@ -1476,7 +1548,7 @@
     "source": "main_list"
   },
   {
-    "id": 124,
+    "id": 130,
     "title": "นางสาว",
     "name": "จารุพร รักกสิกร",
     "email": "Jaruporn.ra@gmail.com",
@@ -1488,7 +1560,7 @@
     "source": "main_list"
   },
   {
-    "id": 125,
+    "id": 131,
     "title": "นางสาว",
     "name": "จิดาภา ประกอบผล",
     "email": "pudjidapa.p@gmail.com",
@@ -1500,79 +1572,115 @@
     "source": "main_list"
   },
   {
-    "id": 126,
+    "id": 132,
+    "title": "ผจก.",
+    "name": "ทวีวัฒน์ แสนดี",
+    "email": "leetong8989@gmail.com",
+    "phone": "0802290720",
+    "status": "VISITOR",
+    "org": "บลูฟามาซี",
+    "note": "-",
+    "session": "17_afternoon_1",
+    "source": "main_list"
+  },
+  {
+    "id": 133,
+    "title": "-",
+    "name": "Supada Rattagan",
+    "email": "-",
+    "phone": "-",
+    "status": "VISITOR",
+    "org": "KMITL",
+    "note": "ผู้ติดตาม อจ.วิบูลย์",
+    "session": "17_afternoon_1",
+    "source": "main_list"
+  },
+  {
+    "id": 134,
+    "title": "Prof.",
+    "name": "Wibool Piyawattanametha",
+    "email": "wibool@gmail.com",
+    "phone": "0879365000",
+    "status": "SPEAKER",
+    "org": "KMITL",
+    "note": "เป็นวิทยากร",
+    "session": "17_afternoon_1",
+    "source": "main_list"
+  },
+  {
+    "id": 135,
     "title": "นายแพทย์",
     "name": "ปราโมทย์ หอเจริญ",
     "email": "-",
     "phone": "-",
-    "status": "VIP",
+    "status": "VIP, SPEAKER",
     "org": "-",
     "note": "-",
     "session": "17_afternoon_1",
     "source": "vip_list"
   },
   {
-    "id": 127,
+    "id": 136,
     "title": "สพ.ญ.",
     "name": "วรางคณา พันธุ์วาณิช",
     "email": "-",
     "phone": "-",
-    "status": "VIP",
+    "status": "VIP, SPEAKER",
     "org": "-",
     "note": "-",
     "session": "17_afternoon_1",
     "source": "vip_list"
   },
   {
-    "id": 128,
+    "id": 137,
     "title": "คุณ",
     "name": "ชัยวัฒน์ พู่พิสุทธิ์",
     "email": "-",
     "phone": "-",
-    "status": "VIP",
+    "status": "VIP, SPEAKER",
     "org": "-",
     "note": "-",
     "session": "17_afternoon_1",
     "source": "vip_list"
   },
   {
-    "id": 129,
+    "id": 138,
     "title": "ทนพญ.",
     "name": "สิริภากร แสงกิจพร",
     "email": "-",
     "phone": "-",
-    "status": "VIP",
+    "status": "VIP, SPEAKER",
     "org": "-",
     "note": "-",
     "session": "17_afternoon_1",
     "source": "vip_list"
   },
   {
-    "id": 130,
-    "title": "รศ.ดร.",
-    "name": "บุญรัตน์ โล่ห์วงศ์วัฒน",
+    "id": 139,
+    "title": "ผศ.ดร.",
+    "name": "ผศ.ดร.หยาดนภา ผาเจริญ",
     "email": "-",
     "phone": "-",
     "status": "VIP",
     "org": "-",
-    "note": "-",
+    "note": "(ผู้ดำเนินรายการ)",
     "session": "17_afternoon_1",
     "source": "vip_list"
   },
   {
-    "id": 131,
+    "id": 140,
     "title": "รศ.ดร.",
     "name": "วิบูลย์ ปิยวัฒนเมธา",
     "email": "-",
     "phone": "-",
     "status": "VIP",
     "org": "-",
-    "note": "-",
+    "note": "(ผู้ดำเนินรายการ)",
     "session": "17_afternoon_1",
     "source": "vip_list"
   },
   {
-    "id": 132,
+    "id": 141,
     "title": "นายกสมาคม",
     "name": "ศรัณย์ แจ้วจิรา",
     "email": "kaewmungkorn@hotmail.com",
@@ -1584,7 +1692,7 @@
     "source": "main_list"
   },
   {
-    "id": 133,
+    "id": 142,
     "title": "-",
     "name": "พัชรา  ชัยสุนทร",
     "email": "-",
@@ -1596,7 +1704,7 @@
     "source": "main_list"
   },
   {
-    "id": 134,
+    "id": 143,
     "title": "นางสาว",
     "name": "ชลธิชา นาขามป้อม",
     "email": "Chonthicha476@gmail.com",
@@ -1608,7 +1716,7 @@
     "source": "main_list"
   },
   {
-    "id": 135,
+    "id": 144,
     "title": "นางสาว",
     "name": "สิริมา พิณเพียงจันทร์",
     "email": "-",
@@ -1620,7 +1728,7 @@
     "source": "main_list"
   },
   {
-    "id": 136,
+    "id": 145,
     "title": "เภสัชกร",
     "name": "สุดารัตน์ เทพจินดา",
     "email": "Sudarat.te@nhealth-asia.com",
@@ -1632,7 +1740,7 @@
     "source": "main_list"
   },
   {
-    "id": 137,
+    "id": 146,
     "title": "-",
     "name": "กมลวรรณ นกสกุล",
     "email": "-",
@@ -1644,7 +1752,7 @@
     "source": "main_list"
   },
   {
-    "id": 138,
+    "id": 147,
     "title": "-",
     "name": "ศักรินทร์ นุกูลกิจ",
     "email": "-",
@@ -1656,7 +1764,7 @@
     "source": "main_list"
   },
   {
-    "id": 139,
+    "id": 148,
     "title": "นาย",
     "name": "ศรัณย์ แจ้วจิรา",
     "email": "kaewmungkorn@hotmail.com",
@@ -1668,7 +1776,7 @@
     "source": "main_list"
   },
   {
-    "id": 140,
+    "id": 149,
     "title": "นาง",
     "name": "พัชรา แจ้วจิรา",
     "email": "-",
@@ -1680,7 +1788,7 @@
     "source": "main_list"
   },
   {
-    "id": 141,
+    "id": 150,
     "title": "นางสาว",
     "name": "ณัฐดุลย์ญามล ประคองจิตธนา",
     "email": "Maymay162510@gmail.com",
@@ -1692,7 +1800,7 @@
     "source": "main_list"
   },
   {
-    "id": 142,
+    "id": 151,
     "title": "-",
     "name": "ศิริพร พิสุทธิกาล",
     "email": "-",
@@ -1704,7 +1812,7 @@
     "source": "main_list"
   },
   {
-    "id": 143,
+    "id": 152,
     "title": "นางสาว",
     "name": "นิตยา พรายเพชร",
     "email": "nidnoika63@gmail.com",
@@ -1716,7 +1824,7 @@
     "source": "main_list"
   },
   {
-    "id": 144,
+    "id": 153,
     "title": "ผู้ช่วยศาสตราจารย์ ดร.",
     "name": "นำคุณ ศรีสนิท",
     "email": "namkhun@g.swu.ac.th",
@@ -1728,7 +1836,7 @@
     "source": "main_list"
   },
   {
-    "id": 145,
+    "id": 154,
     "title": "นางสาว",
     "name": "ปัญญ์พริมา ศรีสนิท",
     "email": "-",
@@ -1740,7 +1848,7 @@
     "source": "main_list"
   },
   {
-    "id": 146,
+    "id": 155,
     "title": "นางสาว",
     "name": "กษิกา สุทธิวิริยะกุล",
     "email": "989auto2@gmail.com",
@@ -1752,7 +1860,7 @@
     "source": "main_list"
   },
   {
-    "id": 147,
+    "id": 156,
     "title": "นางสาว",
     "name": "พัชราภรณ์ นพปรางค์",
     "email": "phatcharaphon.n@dmsc.mail.go.th",
@@ -1764,7 +1872,7 @@
     "source": "main_list"
   },
   {
-    "id": 148,
+    "id": 157,
     "title": "นางสาว",
     "name": "เบญจวรรณ ฝ่ายอุบล",
     "email": "B-bengy@hotmail.com",
@@ -1776,7 +1884,7 @@
     "source": "main_list"
   },
   {
-    "id": 149,
+    "id": 158,
     "title": "นาย",
     "name": "ธัญญา  นาคพัฒน์",
     "email": "-",
@@ -1788,7 +1896,7 @@
     "source": "main_list"
   },
   {
-    "id": 150,
+    "id": 159,
     "title": "นาย",
     "name": "ชานนท์ สมจิตรกุล",
     "email": "chanon.research@gmail.com",
@@ -1800,7 +1908,7 @@
     "source": "main_list"
   },
   {
-    "id": 151,
+    "id": 160,
     "title": "นาย",
     "name": "ศิรินทร์ หล่อวิเชียรรุ่ง",
     "email": "srl@rpcthai.com",
@@ -1812,7 +1920,7 @@
     "source": "main_list"
   },
   {
-    "id": 152,
+    "id": 161,
     "title": "Executive",
     "name": "Pattamaporn Vongdaeng",
     "email": "Pattamaporn.Von@Nhealth-asia.com",
@@ -1824,7 +1932,7 @@
     "source": "main_list"
   },
   {
-    "id": 153,
+    "id": 162,
     "title": "นางสาว",
     "name": "ธมลวรรณ สุภาพพูล",
     "email": "Tamonwan.su@nhealth-asia.com",
@@ -1836,7 +1944,7 @@
     "source": "main_list"
   },
   {
-    "id": 154,
+    "id": 163,
     "title": "นางสาว",
     "name": "สิริพร จุฬารัตน์",
     "email": "siriporn.jul@mtec.or.th",
@@ -1848,7 +1956,7 @@
     "source": "main_list"
   },
   {
-    "id": 155,
+    "id": 164,
     "title": "นางสาว",
     "name": "ภารวี ตั้งเกียรติไพบูลย์",
     "email": "paraweetang@gmail.com",
@@ -1860,7 +1968,7 @@
     "source": "main_list"
   },
   {
-    "id": 156,
+    "id": 165,
     "title": "ดร.",
     "name": "จุลินทิพย์ พุทธวงศ์",
     "email": "julinthip.p@gmail.com",
@@ -1872,7 +1980,7 @@
     "source": "main_list"
   },
   {
-    "id": 157,
+    "id": 166,
     "title": "นาย",
     "name": "พศพงศ์ ศรีวุทธิยเวคิน",
     "email": "chat3ms@hotmail.com",
@@ -1884,19 +1992,19 @@
     "source": "main_list"
   },
   {
-    "id": 158,
+    "id": 167,
     "title": "นางสาว",
     "name": "วัลลภา ตันติจรัสกุลสิริ",
     "email": "wanlapa.tanti@gmail.com",
-    "phone": "0846761648",
+    "phone": "0846761548",
     "status": "VISITOR",
     "org": "คณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย",
-    "note": "เบอร์ติดต่อผิด",
+    "note": "-",
     "session": "17_afternoon_2",
     "source": "main_list"
   },
   {
-    "id": 159,
+    "id": 168,
     "title": "นางสาว",
     "name": "นภสร นันทิกุลวาณิช",
     "email": "-",
@@ -1908,7 +2016,7 @@
     "source": "main_list"
   },
   {
-    "id": 160,
+    "id": 169,
     "title": "ดร.",
     "name": "สุปรีดา เเต้มบุญเลิศชัย",
     "email": "supreeda.tam@nanotec.or.th",
@@ -1920,7 +2028,7 @@
     "source": "main_list"
   },
   {
-    "id": 161,
+    "id": 170,
     "title": "เภสัชกร",
     "name": "พงศธร อิสสระยั่งยืน",
     "email": "kmpinnovation.co.ltd@gmail.com",
@@ -1932,31 +2040,55 @@
     "source": "main_list"
   },
   {
-    "id": 162,
-    "title": "ศ.ภญ.ร.ต.อ.หญิง ดร.",
-    "name": "สุชาดา สุขหร่อง",
-    "email": "-",
-    "phone": "-",
-    "status": "VIP",
-    "org": "-",
+    "id": 171,
+    "title": "ทีปรึกษา",
+    "name": "สำริด จันทานา",
+    "email": "addfag155@gmail.com",
+    "phone": "0865409676",
+    "status": "VISITOR",
+    "org": "เจมเมดิคอล",
     "note": "-",
     "session": "17_afternoon_2",
-    "source": "vip_list"
+    "source": "main_list"
   },
   {
-    "id": 163,
-    "title": "ภญ.",
-    "name": "วรสุดา ยูงทอง",
-    "email": "-",
-    "phone": "-",
-    "status": "VIP",
-    "org": "-",
+    "id": 172,
+    "title": "นาย",
+    "name": "ธนศักดิ์ ทาคำ",
+    "email": "tanasak.hor@gmail.com",
+    "phone": "0825489237",
+    "status": "VISITOR",
+    "org": "นักวิจัยอิสระ",
     "note": "-",
     "session": "17_afternoon_2",
-    "source": "vip_list"
+    "source": "main_list"
   },
   {
-    "id": 164,
+    "id": 173,
+    "title": "นางสาว",
+    "name": "ลัษมา สกลเกียรติ",
+    "email": "-",
+    "phone": "-",
+    "status": "VISITOR",
+    "org": "นักวิจัยอิสระ",
+    "note": "ผู้ติดตาม",
+    "session": "17_afternoon_2",
+    "source": "main_list"
+  },
+  {
+    "id": 174,
+    "title": "ผศ.ดร.",
+    "name": "ปัญจพร วงศ์วิทยากูล",
+    "email": "panjap_w@hotmail.com",
+    "phone": "0819321501",
+    "status": "VISITOR",
+    "org": "คณะทันตแพทยศาสตร์ มหาวิทยาลัยธรรมศาสตร์",
+    "note": "-",
+    "session": "17_afternoon_2",
+    "source": "main_list"
+  },
+  {
+    "id": 175,
     "title": "ผศ.ดร.",
     "name": "อรณี ตั้งเผ่า แดเนียล",
     "email": "-",
@@ -1968,9 +2100,9 @@
     "source": "vip_list"
   },
   {
-    "id": 165,
-    "title": "เภสัชกร",
-    "name": "วิวัฒน์ จัทรสาธิต",
+    "id": 176,
+    "title": "รศ.ดร. ภญ.",
+    "name": "วรินทร รักษ์ศิริวณิช",
     "email": "-",
     "phone": "-",
     "status": "VIP",
@@ -1980,19 +2112,31 @@
     "source": "vip_list"
   },
   {
-    "id": 166,
-    "title": "ศ.นพ.",
-    "name": "สมเกียรติ วัฒนศิริชัยกุล",
+    "id": 177,
+    "title": "ผศ.ดร. ภญ.",
+    "name": "มาลีรักษ์ อัตต์สินทอง",
     "email": "-",
     "phone": "-",
-    "status": "VVIP",
+    "status": "VIP",
     "org": "-",
     "note": "-",
     "session": "17_afternoon_2",
     "source": "vip_list"
   },
   {
-    "id": 167,
+    "id": 178,
+    "title": "ศ.นพ.",
+    "name": "สมเกียรติ วัฒนศิริชัยกุล",
+    "email": "-",
+    "phone": "-",
+    "status": "SPEACKER, VIP",
+    "org": "-",
+    "note": "(ผู้ดำเนินรายการ)",
+    "session": "17_afternoon_2",
+    "source": "vip_list"
+  },
+  {
+    "id": 179,
     "title": "-",
     "name": "อนงค์นาฏ ขาวสังข์",
     "email": "-",
@@ -2004,7 +2148,7 @@
     "source": "main_list"
   },
   {
-    "id": 168,
+    "id": 180,
     "title": "-",
     "name": "ปาริฉัตร ถาวรชาติ",
     "email": "-",
@@ -2016,7 +2160,7 @@
     "source": "main_list"
   },
   {
-    "id": 169,
+    "id": 181,
     "title": "รศ.ดร.",
     "name": "ทัศนียา รัตนฤาทัย นพรัตน์แจ่มจำรัส",
     "email": "thasaneeya.rat@mahidol.ac.th",
@@ -2028,19 +2172,19 @@
     "source": "main_list"
   },
   {
-    "id": 170,
+    "id": 182,
     "title": "ผศ.",
     "name": "สมศรี ดาวฉาย",
     "email": "sumuetu37@gmail.com",
     "phone": "0814840933",
     "status": "VISITOR",
     "org": "ThaiBMI",
-    "note": "รอยืนยัน สถานะป้าย",
+    "note": "Vip +กรรมการ MIIC",
     "session": "18_all_day",
     "source": "main_list"
   },
   {
-    "id": 171,
+    "id": 183,
     "title": "รศ.ดร.",
     "name": "สุชัย นพรัตน์แจ่มจำรัส",
     "email": "suchai.nop@mahidol.ac.th",
@@ -2052,7 +2196,7 @@
     "source": "main_list"
   },
   {
-    "id": 172,
+    "id": 184,
     "title": "Chief executive officer",
     "name": "นฤศันส์ ธันวารชร",
     "email": "narusan@innospacethailand.com",
@@ -2064,7 +2208,7 @@
     "source": "main_list"
   },
   {
-    "id": 173,
+    "id": 185,
     "title": "นายกสมาคม",
     "name": "ศรัณย์ แจ้วจิรา",
     "email": "kaewmungkorn@hotmail.com",
@@ -2076,7 +2220,7 @@
     "source": "main_list"
   },
   {
-    "id": 174,
+    "id": 186,
     "title": "-",
     "name": "พัชรา  ชัยสุนทร",
     "email": "-",
@@ -2088,7 +2232,7 @@
     "source": "main_list"
   },
   {
-    "id": 175,
+    "id": 187,
     "title": "นางสาว",
     "name": "ชลธิชา นาขามป้อม",
     "email": "Chonthicha476@gmail.com",
@@ -2100,7 +2244,7 @@
     "source": "main_list"
   },
   {
-    "id": 176,
+    "id": 188,
     "title": "นางสาว",
     "name": "สิริมา พิณเพียงจันทร์",
     "email": "-",
@@ -2112,7 +2256,7 @@
     "source": "main_list"
   },
   {
-    "id": 177,
+    "id": 189,
     "title": "นาย",
     "name": "ศิรินทร์ หล่อวิเชียรรุ่ง",
     "email": "Srl@rpcthai.com",
@@ -2124,7 +2268,7 @@
     "source": "main_list"
   },
   {
-    "id": 178,
+    "id": 190,
     "title": "เภสัชกร",
     "name": "สุดารัตน์ เทพจินดา",
     "email": "Sudarat.te@nhealth-asia.com",
@@ -2136,7 +2280,7 @@
     "source": "main_list"
   },
   {
-    "id": 179,
+    "id": 191,
     "title": "-",
     "name": "กมลวรรณ นกสกุล",
     "email": "-",
@@ -2148,7 +2292,7 @@
     "source": "main_list"
   },
   {
-    "id": 180,
+    "id": 192,
     "title": "-",
     "name": "ศักรินทร์ นุกูลกิจ",
     "email": "-",
@@ -2160,7 +2304,7 @@
     "source": "main_list"
   },
   {
-    "id": 181,
+    "id": 193,
     "title": "นาย",
     "name": "ศรัณย์ แจ้วจิรา",
     "email": "kaewmungkorn@hotmail.com",
@@ -2172,7 +2316,7 @@
     "source": "main_list"
   },
   {
-    "id": 182,
+    "id": 194,
     "title": "นาง",
     "name": "พัชรา แจ้วจิรา",
     "email": "-",
@@ -2184,7 +2328,7 @@
     "source": "main_list"
   },
   {
-    "id": 183,
+    "id": 195,
     "title": "ภญ.",
     "name": "นลิญา มณีสว่างวงศ์",
     "email": "Naliya.ma@nhealth-asia.com",
@@ -2196,7 +2340,7 @@
     "source": "main_list"
   },
   {
-    "id": 184,
+    "id": 196,
     "title": "-",
     "name": "วัศรัชต์ สิงหกมล",
     "email": "-",
@@ -2208,7 +2352,7 @@
     "source": "main_list"
   },
   {
-    "id": 185,
+    "id": 197,
     "title": "ดร.",
     "name": "ชณชนก ลีฬหาวงศ์",
     "email": "-",
@@ -2220,7 +2364,7 @@
     "source": "main_list"
   },
   {
-    "id": 186,
+    "id": 198,
     "title": "นางสาว",
     "name": "นัตวิไล อุทุทพฤกษ์พร",
     "email": "pae@bin-dai.com",
@@ -2232,7 +2376,7 @@
     "source": "main_list"
   },
   {
-    "id": 187,
+    "id": 199,
     "title": "นาง",
     "name": "ภัททราภรณ์ ปาจริยพง์",
     "email": "-",
@@ -2244,7 +2388,7 @@
     "source": "main_list"
   },
   {
-    "id": 188,
+    "id": 200,
     "title": "นาย",
     "name": "สุทัศน์ อัศวินนิมิตร",
     "email": "suthatachwinnimit17@gmail.com",
@@ -2256,7 +2400,7 @@
     "source": "main_list"
   },
   {
-    "id": 189,
+    "id": 201,
     "title": "นาง",
     "name": "อัมพร  แซ่เล็ก",
     "email": "Umporn249360@gmail.com",
@@ -2268,7 +2412,7 @@
     "source": "main_list"
   },
   {
-    "id": 190,
+    "id": 202,
     "title": "นางสาว",
     "name": "ณัฐดุลย์ญามล ประคองจิตธนา",
     "email": "Maymay162510@gmail.com",
@@ -2280,7 +2424,7 @@
     "source": "main_list"
   },
   {
-    "id": 191,
+    "id": 203,
     "title": "-",
     "name": "ศิริพร พิสุทธิกาล",
     "email": "-",
@@ -2292,7 +2436,7 @@
     "source": "main_list"
   },
   {
-    "id": 192,
+    "id": 204,
     "title": "นางสาว",
     "name": "นิตยา พรายเพชร",
     "email": "nidnoika63@gmail.com",
@@ -2304,7 +2448,7 @@
     "source": "main_list"
   },
   {
-    "id": 193,
+    "id": 205,
     "title": "สพ.ญ.",
     "name": "สุณิชา ชานวาทิก",
     "email": "Sunicha@tcels.or.th",
@@ -2316,7 +2460,7 @@
     "source": "main_list"
   },
   {
-    "id": 194,
+    "id": 206,
     "title": "นางสาว",
     "name": "ชลณภัทร สุขสุเดช",
     "email": "chonnapat@tistr.or.th",
@@ -2328,7 +2472,7 @@
     "source": "main_list"
   },
   {
-    "id": 195,
+    "id": 207,
     "title": "นางสาว",
     "name": "อาภาพร พงศ์ปลื้มปิติชัย",
     "email": "-",
@@ -2340,7 +2484,7 @@
     "source": "main_list"
   },
   {
-    "id": 196,
+    "id": 208,
     "title": "ศาสตราจารย์คลินิก นายแพทย์",
     "name": "ดิฐกานต์ บริบูรณ์หิรัญสาร",
     "email": "dittakarn.bor@mahidol.ac.th",
@@ -2352,7 +2496,7 @@
     "source": "main_list"
   },
   {
-    "id": 197,
+    "id": 209,
     "title": "นางสาว",
     "name": "ฉัตรธิชา บริบูรณ์หิรัญสาร",
     "email": "-",
@@ -2364,7 +2508,7 @@
     "source": "main_list"
   },
   {
-    "id": 198,
+    "id": 210,
     "title": "นาย",
     "name": "โยวิพัจน์ เสนะวีณิน",
     "email": "yovipan@gmail.com",
@@ -2376,7 +2520,7 @@
     "source": "main_list"
   },
   {
-    "id": 199,
+    "id": 211,
     "title": "รศ.",
     "name": "Santi Asawasripongtorn",
     "email": "fengsta@gmail.com",
@@ -2388,7 +2532,7 @@
     "source": "main_list"
   },
   {
-    "id": 200,
+    "id": 212,
     "title": "รศ.ดร.",
     "name": "ชาญไชย ไทยเจียม",
     "email": "chanchait@g.swu.ac.th",
@@ -2400,7 +2544,7 @@
     "source": "main_list"
   },
   {
-    "id": 201,
+    "id": 213,
     "title": "นางสาว",
     "name": "เปรมวดี วงค์ประเสริฐ",
     "email": "premwadi.wo@nhealth-asia.com",
@@ -2412,7 +2556,7 @@
     "source": "main_list"
   },
   {
-    "id": 202,
+    "id": 214,
     "title": "ผู้ช่วยศาสตราจารย์ ดร.",
     "name": "นำคุณ ศรีสนิท",
     "email": "namkhun@g.swu.ac.th",
@@ -2424,7 +2568,7 @@
     "source": "main_list"
   },
   {
-    "id": 203,
+    "id": 215,
     "title": "นางสาว",
     "name": "ปัญญ์พริมา ศรีสนิท",
     "email": "-",
@@ -2436,7 +2580,7 @@
     "source": "main_list"
   },
   {
-    "id": 204,
+    "id": 216,
     "title": "นางสาว",
     "name": "นัฐวดี เดชชัยยัญ",
     "email": "nutwadeed@outlook.com",
@@ -2448,7 +2592,7 @@
     "source": "main_list"
   },
   {
-    "id": 205,
+    "id": 217,
     "title": "นางสาว",
     "name": "กษิกา สุทธิวิริยะกุล",
     "email": "989auto2@gmail.com",
@@ -2460,7 +2604,7 @@
     "source": "main_list"
   },
   {
-    "id": 206,
+    "id": 218,
     "title": "ผศ.ดร.",
     "name": "รุ่งทิพย์ ดวงแก้ว",
     "email": "rungtip.d@allied.tu.ac.th",
@@ -2472,7 +2616,7 @@
     "source": "main_list"
   },
   {
-    "id": 207,
+    "id": 219,
     "title": "นางสาว",
     "name": "ดวงกมล วรเกษมศักดิ์",
     "email": "Dky.dta@gmail.com",
@@ -2484,7 +2628,7 @@
     "source": "main_list"
   },
   {
-    "id": 208,
+    "id": 220,
     "title": "นางสาว",
     "name": "พัชราภรณ์ นพปรางค์",
     "email": "phatcharaphon.n@dmsc.mail.go.th",
@@ -2496,7 +2640,7 @@
     "source": "main_list"
   },
   {
-    "id": 209,
+    "id": 221,
     "title": "นางสาว",
     "name": "เบญจวรรณ ฝ่ายอุบล",
     "email": "B-bengy@hotmail.com",
@@ -2508,7 +2652,7 @@
     "source": "main_list"
   },
   {
-    "id": 210,
+    "id": 222,
     "title": "นาย",
     "name": "ธัญญา  นาคพัฒน์",
     "email": "-",
@@ -2520,7 +2664,7 @@
     "source": "main_list"
   },
   {
-    "id": 211,
+    "id": 223,
     "title": "นาย",
     "name": "ชานนท์ สมจิตรกุล",
     "email": "chanon.research@gmail.com",
@@ -2532,7 +2676,7 @@
     "source": "main_list"
   },
   {
-    "id": 212,
+    "id": 224,
     "title": "นาย",
     "name": "ภูครินทร์  ทองเกลี้ยง",
     "email": "Pukarin.to@bdms.co.th",
@@ -2544,7 +2688,7 @@
     "source": "main_list"
   },
   {
-    "id": 213,
+    "id": 225,
     "title": "นางสาว",
     "name": "อรอนงค์ คาวา",
     "email": "on-anong.kawa@g.swu.ac.th",
@@ -2556,7 +2700,7 @@
     "source": "main_list"
   },
   {
-    "id": 214,
+    "id": 226,
     "title": "นางสาว",
     "name": "อมรา อยู่ทน",
     "email": "ammarm.yo@Nhealth-asia.com",
@@ -2568,7 +2712,7 @@
     "source": "main_list"
   },
   {
-    "id": 215,
+    "id": 227,
     "title": "นางสาว",
     "name": "วรัมพร จิตต์ธรร",
     "email": "-",
@@ -2580,7 +2724,7 @@
     "source": "main_list"
   },
   {
-    "id": 216,
+    "id": 228,
     "title": "นาย",
     "name": "พีร์ สุทธิศรีปก",
     "email": "-",
@@ -2592,7 +2736,7 @@
     "source": "main_list"
   },
   {
-    "id": 217,
+    "id": 229,
     "title": "ดร.",
     "name": "สายทิพย์ โสรัตน์",
     "email": "saitips@gmail.com",
@@ -2604,7 +2748,7 @@
     "source": "main_list"
   },
   {
-    "id": 218,
+    "id": 230,
     "title": "ดร.",
     "name": "วรรณี ฉินศิริกุล",
     "email": "-",
@@ -2616,7 +2760,7 @@
     "source": "main_list"
   },
   {
-    "id": 219,
+    "id": 231,
     "title": "ผู้จัดการ",
     "name": "ชลาลัย ซัตตั้น",
     "email": "chalalai.sutton@mtec.or.th",
@@ -2628,7 +2772,7 @@
     "source": "main_list"
   },
   {
-    "id": 220,
+    "id": 232,
     "title": "นาย",
     "name": "ศิรินทร์ หล่อวิเชียรรุ่ง",
     "email": "srl@rpcthai.com",
@@ -2640,7 +2784,7 @@
     "source": "main_list"
   },
   {
-    "id": 221,
+    "id": 233,
     "title": "ผศ.",
     "name": "ยงยุทธ​ ขจร​ปรีดา​นนท์​",
     "email": "yongyuth.kaj@mahidol.ac.th",
@@ -2652,7 +2796,7 @@
     "source": "main_list"
   },
   {
-    "id": 222,
+    "id": 234,
     "title": "ผศ.",
     "name": "สุนิษา โอบอ้อม",
     "email": "sunisa.aobaom@gmail.com",
@@ -2664,7 +2808,7 @@
     "source": "main_list"
   },
   {
-    "id": 223,
+    "id": 235,
     "title": "รศ.ดร.",
     "name": "หิรัญญา ศรีธาตุ",
     "email": "Hiranya.s@allied.tu.ac.th",
@@ -2676,7 +2820,7 @@
     "source": "main_list"
   },
   {
-    "id": 224,
+    "id": 236,
     "title": "นาย",
     "name": "ชัยวัฒน์ ไสลวงษ์",
     "email": "Chaiwat.offline@gmail.com",
@@ -2688,7 +2832,7 @@
     "source": "main_list"
   },
   {
-    "id": 225,
+    "id": 237,
     "title": "Executive",
     "name": "Pattamaporn Vongdaeng",
     "email": "Pattamaporn.Von@Nhealth-asia.com",
@@ -2700,7 +2844,7 @@
     "source": "main_list"
   },
   {
-    "id": 226,
+    "id": 238,
     "title": "นางสาว",
     "name": "ธมลวรรณ สุภาพพูล",
     "email": "Tamonwan.su@nhealth-asia.com",
@@ -2712,7 +2856,7 @@
     "source": "main_list"
   },
   {
-    "id": 227,
+    "id": 239,
     "title": "ทพญ.",
     "name": "วณิชา แก้วแหวร",
     "email": "y.wanisha@gmail.com",
@@ -2724,7 +2868,7 @@
     "source": "main_list"
   },
   {
-    "id": 228,
+    "id": 240,
     "title": "ด.ญ.",
     "name": "จิดาภา ไทยเจียม",
     "email": "-",
@@ -2736,7 +2880,7 @@
     "source": "main_list"
   },
   {
-    "id": 229,
+    "id": 241,
     "title": "นางสาว",
     "name": "สิริพร จุฬารัตน์",
     "email": "siriporn.jul@mtec.or.th",
@@ -2748,7 +2892,7 @@
     "source": "main_list"
   },
   {
-    "id": 230,
+    "id": 242,
     "title": "ดร.",
     "name": "ฐิติวัสส์ สุวคนธ์",
     "email": "dhitiwass.s@dmsc.mail.go.th",
@@ -2760,7 +2904,7 @@
     "source": "main_list"
   },
   {
-    "id": 231,
+    "id": 243,
     "title": "นางสาว",
     "name": "ปัทมา พรมจันทร์",
     "email": "prommajun.p@gmail.com",
@@ -2772,7 +2916,7 @@
     "source": "main_list"
   },
   {
-    "id": 232,
+    "id": 244,
     "title": "นางสาว",
     "name": "ภารวี ตั้งเกียรติไพบูลย์",
     "email": "paraweetang@gmail.com",
@@ -2784,7 +2928,7 @@
     "source": "main_list"
   },
   {
-    "id": 233,
+    "id": 245,
     "title": "นาย",
     "name": "วงศ์วิทย์  เสนะวงศ์",
     "email": "wongwit@g.swu.ac.th",
@@ -2796,7 +2940,7 @@
     "source": "main_list"
   },
   {
-    "id": 234,
+    "id": 246,
     "title": "ดร.",
     "name": "จุลินทิพย์ พุทธวงศ์",
     "email": "julinthip.p@gmail.com",
@@ -2808,7 +2952,7 @@
     "source": "main_list"
   },
   {
-    "id": 235,
+    "id": 247,
     "title": "นางสาว",
     "name": "จารุพร รักกสิกร",
     "email": "Jaruporn.ra@gmail.com",
@@ -2820,7 +2964,7 @@
     "source": "main_list"
   },
   {
-    "id": 236,
+    "id": 248,
     "title": "นางสาว",
     "name": "จิดาภา ประกอบผล",
     "email": "pudjidapa.p@gmail.com",
@@ -2832,7 +2976,7 @@
     "source": "main_list"
   },
   {
-    "id": 237,
+    "id": 249,
     "title": "นาย",
     "name": "พศพงศ์ ศรีวุทธิยเวคิน",
     "email": "chat3ms@hotmail.com",
@@ -2844,19 +2988,19 @@
     "source": "main_list"
   },
   {
-    "id": 238,
+    "id": 250,
     "title": "นางสาว",
     "name": "วัลลภา ตันติจรัสกุลสิริ",
     "email": "wanlapa.tanti@gmail.com",
-    "phone": "0846761648",
+    "phone": "0846761548",
     "status": "VISITOR",
     "org": "คณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย",
-    "note": "เบอร์ติดต่อผิด",
+    "note": "-",
     "session": "18_all_day",
     "source": "main_list"
   },
   {
-    "id": 239,
+    "id": 251,
     "title": "นางสาว",
     "name": "นภสร นันทิกุลวาณิช",
     "email": "-",
@@ -2868,7 +3012,7 @@
     "source": "main_list"
   },
   {
-    "id": 240,
+    "id": 252,
     "title": "เภสัชกร",
     "name": "พงศธร อิสสระยั่งยืน",
     "email": "kmpinnovation.co.ltd@gmail.com",
@@ -2880,7 +3024,7 @@
     "source": "main_list"
   },
   {
-    "id": 241,
+    "id": 253,
     "title": "ดร.",
     "name": "นพรุจ สุ่มหิรัญ",
     "email": "n.soomherun@gmail.com",
@@ -2892,86 +3036,194 @@
     "source": "main_list"
   },
   {
-    "id": 242,
+    "id": 254,
+    "title": "ทีปรึกษา",
+    "name": "สำริด จันทานา",
+    "email": "addfag155@gmail.com",
+    "phone": "0865409676",
+    "status": "VISITOR",
+    "org": "เจมเมดิคอล",
+    "note": "-",
+    "session": "18_all_day",
+    "source": "main_list"
+  },
+  {
+    "id": 255,
+    "title": "ผจก.",
+    "name": "ทวีวัฒน์ แสนดี",
+    "email": "leetong8989@gmail.com",
+    "phone": "0802290720",
+    "status": "VISITOR",
+    "org": "บลูฟามาซี",
+    "note": "-",
+    "session": "18_all_day",
+    "source": "main_list"
+  },
+  {
+    "id": 256,
+    "title": "นาย",
+    "name": "ธนศักดิ์ ทาคำ",
+    "email": "tanasak.hor@gmail.com",
+    "phone": "0825489237",
+    "status": "VISITOR",
+    "org": "นักวิจัยอิสระ",
+    "note": "-",
+    "session": "18_all_day",
+    "source": "main_list"
+  },
+  {
+    "id": 257,
+    "title": "นางสาว",
+    "name": "ลัษมา สกลเกียรติ",
+    "email": "-",
+    "phone": "-",
+    "status": "VISITOR",
+    "org": "นักวิจัยอิสระ",
+    "note": "ผู้ติดตาม",
+    "session": "18_all_day",
+    "source": "main_list"
+  },
+  {
+    "id": 258,
+    "title": "-",
+    "name": "Supada Rattagan",
+    "email": "-",
+    "phone": "-",
+    "status": "VISITOR",
+    "org": "KMITL",
+    "note": "ผู้ติดตาม อจ.วิบูลย์",
+    "session": "18_all_day",
+    "source": "main_list"
+  },
+  {
+    "id": 259,
+    "title": "นาย",
+    "name": "สินชัย จันทร์แดง",
+    "email": "Sinchai.vte@gmail.com",
+    "phone": "0925258501",
+    "status": "VISITOR",
+    "org": "นักวิชาการอิสระ",
+    "note": "-",
+    "session": "18_all_day",
+    "source": "main_list"
+  },
+  {
+    "id": 260,
+    "title": "Prof.",
+    "name": "Wibool Piyawattanametha",
+    "email": "wibool@gmail.com",
+    "phone": "0879365000",
+    "status": "SPEAKER",
+    "org": "KMITL",
+    "note": "เป็นวิทยากร",
+    "session": "18_all_day",
+    "source": "main_list"
+  },
+  {
+    "id": 261,
+    "title": "รศ.ดร.",
+    "name": "บุญรัตน์ โล่ห์วงศ์วัฒน",
+    "email": "-",
+    "phone": "-",
+    "status": "VIP, SPEAKER",
+    "org": "-",
+    "note": "-",
+    "session": "18_all_day",
+    "source": "vip_list"
+  },
+  {
+    "id": 262,
     "title": "ดร.",
-    "name": "ข้าว ต้นสมบูรณ์",
+    "name": "ภาคภูมิ บวบทอง",
     "email": "-",
     "phone": "-",
-    "status": "VIP",
+    "status": "VIP, SPEAKER",
     "org": "-",
     "note": "-",
     "session": "18_all_day",
     "source": "vip_list"
   },
   {
-    "id": 243,
+    "id": 263,
     "title": "คุณ",
-    "name": "ศรัณย์ พันธ์พิพัฒไพบูลย์",
+    "name": "นิจพร จงอุดมฤกษ์",
     "email": "-",
     "phone": "-",
-    "status": "VIP",
+    "status": "VIP, SPEAKER",
     "org": "-",
     "note": "-",
     "session": "18_all_day",
     "source": "vip_list"
   },
   {
-    "id": 244,
-    "title": "ผศ.นพ.",
-    "name": "สุรัตน์ ตันประเวช",
-    "email": "-",
-    "phone": "-",
-    "status": "VIP",
-    "org": "-",
-    "note": "-",
-    "session": "18_all_day",
-    "source": "vip_list"
-  },
-  {
-    "id": 245,
+    "id": 264,
     "title": "คุณ",
     "name": "ศรัณย์ ธรรมศิริกุล",
     "email": "-",
     "phone": "-",
-    "status": "VIP",
+    "status": "VIP, SPEAKER",
     "org": "-",
     "note": "-",
     "session": "18_all_day",
     "source": "vip_list"
   },
   {
-    "id": 246,
-    "title": "ดร.",
-    "name": "กริชผกา บุญเฟื่อง",
+    "id": 265,
+    "title": "รศ.ดร.",
+    "name": "อนรรฆ ขันธะชวนะ",
     "email": "-",
     "phone": "-",
     "status": "VIP",
     "org": "-",
+    "note": "(ผู้ดำเนินรายการ)",
+    "session": "18_all_day",
+    "source": "vip_list"
+  },
+  {
+    "id": 266,
+    "title": "ดร.",
+    "name": "กริชผกา บุญเฟื่อง",
+    "email": "-",
+    "phone": "-",
+    "status": "VIP, SPEAKER",
+    "org": "-",
     "note": "-",
     "session": "18_all_day",
     "source": "vip_list"
   },
   {
-    "id": 247,
+    "id": 267,
     "title": "-",
     "name": "ผู้แทนจาก Innovation one",
     "email": "-",
     "phone": "-",
     "status": "VIP",
     "org": "-",
+    "note": "(รอการตอบกลับ)",
+    "session": "18_all_day",
+    "source": "vip_list"
+  },
+  {
+    "id": 268,
+    "title": "คุณ",
+    "name": "กิตติเทพ จริงจิตร",
+    "email": "-",
+    "phone": "-",
+    "status": "VIP, SPEAKER",
+    "org": "-",
     "note": "-",
     "session": "18_all_day",
     "source": "vip_list"
   },
   {
-    "id": 248,
-    "title": "คุณ",
-    "name": "กิตติเทพ จริงจิตร",
+    "id": 269,
+    "title": "รศ.ดร.",
+    "name": "อนรรฆ ขันธะชวนะ",
     "email": "-",
     "phone": "-",
     "status": "VIP",
     "org": "-",
-    "note": "-",
+    "note": "(ผู้ดำเนินรายการ)",
     "session": "18_all_day",
     "source": "vip_list"
   }

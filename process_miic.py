@@ -6,8 +6,8 @@ data_dir = "/Users/king_phuripol/Work/SmartLab/MIIC/Data"
 
 # File mapping
 files = {
-    "secondary": "miic_secondary.csv",  # มัธยมศึกษา
-    "higher": "miic_higher.csv"  # อุดมศึกษา
+    "secondary": "miic_secondary_education.csv",  # มัธยมศึกษา
+    "higher": "miic_higher_education.csv"  # อุดมศึกษา
 }
 
 def clean_value(val):

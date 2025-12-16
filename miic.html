@@ -17,8 +17,18 @@
         <div class="logo-section">
           <div class="medical-icon">
             <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
-              <circle cx="25" cy="25" r="23" fill="white" stroke="#8B5CF6" stroke-width="2"/>
-              <path d="M25 12L28 22H38L30 28L33 38L25 32L17 38L20 28L12 22H22L25 12Z" fill="#8B5CF6"/>
+              <circle
+                cx="25"
+                cy="25"
+                r="23"
+                fill="white"
+                stroke="#8B5CF6"
+                stroke-width="2"
+              />
+              <path
+                d="M25 12L28 22H38L30 28L33 38L25 32L17 38L20 28L12 22H22L25 12Z"
+                fill="#8B5CF6"
+              />
             </svg>
           </div>
           <div>
@@ -56,9 +66,7 @@
         <button class="tab-btn" onclick="showTab('checklist')">
           เช็คลิสต์
         </button>
-        <button class="tab-btn" onclick="showTab('teams')">
-          รายชื่อทีม
-        </button>
+        <button class="tab-btn" onclick="showTab('teams')">รายชื่อทีม</button>
         <button class="tab-btn" onclick="showTab('stats')">สถิติ</button>
       </div>
 
@@ -149,7 +157,10 @@
                   <span class="status-count" id="competitorCount">0</span>
                 </div>
                 <div class="progress-bar">
-                  <div class="progress-fill competitor-fill" id="competitorProgress"></div>
+                  <div
+                    class="progress-fill competitor-fill"
+                    id="competitorProgress"
+                  ></div>
                 </div>
                 <div class="status-detail">
                   <span id="competitorChecked">0</span> /
@@ -183,7 +194,10 @@
                   <span class="status-count" id="secondaryCount">0</span>
                 </div>
                 <div class="progress-bar">
-                  <div class="progress-fill secondary-fill" id="secondaryProgress"></div>
+                  <div
+                    class="progress-fill secondary-fill"
+                    id="secondaryProgress"
+                  ></div>
                 </div>
                 <div class="status-detail">
                   <span id="secondaryChecked">0</span> /
@@ -197,7 +211,10 @@
                   <span class="status-count" id="higherCount">0</span>
                 </div>
                 <div class="progress-bar">
-                  <div class="progress-fill higher-fill" id="higherProgress"></div>
+                  <div
+                    class="progress-fill higher-fill"
+                    id="higherProgress"
+                  ></div>
                 </div>
                 <div class="status-detail">
                   <span id="higherChecked">0</span> /
@@ -214,8 +231,17 @@
     <div id="successModal" class="modal">
       <div class="modal-content">
         <div class="success-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/>
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M20 6L9 17l-5-5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
           </svg>
         </div>
         <h2>เช็คชื่อเรียบร้อย!</h2>
