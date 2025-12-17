@@ -46,7 +46,9 @@ def clean_title(title):
         "ผศ": "ผศ.", "ผู้ช่วยศาสตราจารย์": "ผศ.",
         "รศ.ดร.": "รศ.ดร.", "รศ. ดร.": "รศ.ดร.", "รองศาสตราจารย์ ดร.": "รศ.ดร.",
         "คุุณ": "คุณ",
-        "Assoc.Prof": "รศ.", "Assistant MD": "ผศ.นพ."
+        "Assoc.Prof": "รศ.", "Assistant MD": "ผศ.นพ.",
+        "Prof.": "ศ.", "Dr": "ดร.", "Dr.": "ดร.",
+        "Chief executive officer": "-", "Executive": "-"
     }
     return mapping.get(t, t)
 
