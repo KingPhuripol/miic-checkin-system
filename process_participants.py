@@ -17,12 +17,23 @@ session_map = {
     "18_jan_all_day.csv": "18_all_day"
 }
 
+name_mapping = {
+    "Parinya Supanijwattana": "ปริญญา สุพาณิชวัฒนา",
+    "Santi Asawasripongtorn": "สันติ อัศวศรีพงศ์ธร",
+    "Pattamaporn Vongdaeng": "ปัทมาภรณ์ วงศ์แดง",
+    "Supada Rattagan": "สุภาดา รัตนกานต์",
+    "Wibool Piyawattanametha": "วิบูลย์ ปิยวัฒนเมธา"
+}
 
 # --- Cleaning Functions ---
 def clean_value(val):
     if pd.isna(val) or val == "" or str(val).strip() == "":
         return "-"
     return str(val).strip()
+
+def clean_name(name):
+    n = clean_value(name)
+    return name_mapping.get(n, n)
 
 def clean_title(title):
     if not title or pd.isna(title): return "-"
@@ -80,6 +91,7 @@ def clean_follower_names(follower_str):
     for p in parts:
         n = p.strip()
         if n:
+            n = name_mapping.get(n, n)
             names.append(n)
     return names
 
@@ -127,8 +139,8 @@ for filename in files:
     
     for _, row in left_df.iterrows():
         if pd.isna(row['name']): continue
-        name_val = str(row['name']).strip()
-        if not name_val: continue
+        name_val = clean_name(row['name'])
+        if not name_val or name_val == "-": continue
         
         p = {
             'id': participant_id,
@@ -270,8 +282,8 @@ if os.path.exists(response_path):
         col_org = 'ระบุ สังกัดของท่าน'
         
         for _, row in df_resp.iterrows():
-            name_val = str(row[col_name]).strip()
-            if not name_val or pd.isna(row[col_name]): continue
+            name_val = clean_name(row[col_name])
+            if not name_val or name_val == "-": continue
             
             title_val = clean_title(row.get(col_title))
             email_val = clean_value(row.get(col_email))

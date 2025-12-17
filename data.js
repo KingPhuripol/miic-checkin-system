@@ -278,7 +278,7 @@ const initialParticipants = [
   {
     "id": 24,
     "title": "ผศ.นพ.",
-    "name": "Parinya Supanijwattana",
+    "name": "ปริญญา สุพาณิชวัฒนา",
     "email": "parinya_s@emerald-nw.com",
     "phone": "0874550348",
     "status": "VISITOR",
@@ -518,7 +518,7 @@ const initialParticipants = [
   {
     "id": 44,
     "title": "รศ.",
-    "name": "Santi Asawasripongtorn",
+    "name": "สันติ อัศวศรีพงศ์ธร",
     "email": "fengsta@gmail.com",
     "phone": "0830758668",
     "status": "VISITOR",
@@ -878,7 +878,7 @@ const initialParticipants = [
   {
     "id": 74,
     "title": "Executive",
-    "name": "Pattamaporn Vongdaeng",
+    "name": "ปัทมาภรณ์ วงศ์แดง",
     "email": "Pattamaporn.Von@Nhealth-asia.com",
     "phone": "0966566695",
     "status": "VISITOR",
@@ -1178,7 +1178,7 @@ const initialParticipants = [
   {
     "id": 99,
     "title": "-",
-    "name": "Supada Rattagan",
+    "name": "สุภาดา รัตนกานต์",
     "email": "-",
     "phone": "-",
     "status": "VISITOR",
@@ -1202,7 +1202,7 @@ const initialParticipants = [
   {
     "id": 101,
     "title": "Prof.",
-    "name": "Wibool Piyawattanametha",
+    "name": "วิบูลย์ ปิยวัฒนเมธา",
     "email": "wibool@gmail.com",
     "phone": "0879365000",
     "status": "SPEAKER",
@@ -1253,7 +1253,7 @@ const initialParticipants = [
     "name": "ประสิทธิ์ วัฒนาภา",
     "email": "-",
     "phone": "-",
-    "status": "VIP, SPEAKER",
+    "status": "SPEAKER, VIP",
     "org": "-",
     "note": "-",
     "session": "17_morning",
@@ -1406,7 +1406,7 @@ const initialParticipants = [
   {
     "id": 118,
     "title": "ผศ.นพ.",
-    "name": "Parinya Supanijwattana",
+    "name": "ปริญญา สุพาณิชวัฒนา",
     "email": "parinya_s@emerald-nw.com",
     "phone": "0874550348",
     "status": "VISITOR",
@@ -1598,7 +1598,7 @@ const initialParticipants = [
   {
     "id": 134,
     "title": "รศ.",
-    "name": "Santi Asawasripongtorn",
+    "name": "สันติ อัศวศรีพงศ์ธร",
     "email": "fengsta@gmail.com",
     "phone": "0830758668",
     "status": "VISITOR",
@@ -1970,7 +1970,7 @@ const initialParticipants = [
   {
     "id": 165,
     "title": "-",
-    "name": "Supada Rattagan",
+    "name": "สุภาดา รัตนกานต์",
     "email": "-",
     "phone": "-",
     "status": "VISITOR",
@@ -1982,7 +1982,7 @@ const initialParticipants = [
   {
     "id": 166,
     "title": "Prof.",
-    "name": "Wibool Piyawattanametha",
+    "name": "วิบูลย์ ปิยวัฒนเมธา",
     "email": "wibool@gmail.com",
     "phone": "0879365000",
     "status": "SPEAKER",
@@ -2402,7 +2402,7 @@ const initialParticipants = [
   {
     "id": 201,
     "title": "Executive",
-    "name": "Pattamaporn Vongdaeng",
+    "name": "ปัทมาภรณ์ วงศ์แดง",
     "email": "Pattamaporn.Von@Nhealth-asia.com",
     "phone": "0966566695",
     "status": "VISITOR",
@@ -2633,7 +2633,7 @@ const initialParticipants = [
     "name": "สมเกียรติ วัฒนศิริชัยกุล",
     "email": "-",
     "phone": "-",
-    "status": "VIP, SPEAKER",
+    "status": "SPEACKER, VIP",
     "org": "-",
     "note": "(ผู้ดำเนินรายการ)",
     "session": "17_afternoon_2",
@@ -3158,7 +3158,7 @@ const initialParticipants = [
   {
     "id": 264,
     "title": "รศ.",
-    "name": "Santi Asawasripongtorn",
+    "name": "สันติ อัศวศรีพงศ์ธร",
     "email": "fengsta@gmail.com",
     "phone": "0830758668",
     "status": "VISITOR",
@@ -3530,7 +3530,7 @@ const initialParticipants = [
   {
     "id": 295,
     "title": "Executive",
-    "name": "Pattamaporn Vongdaeng",
+    "name": "ปัทมาภรณ์ วงศ์แดง",
     "email": "Pattamaporn.Von@Nhealth-asia.com",
     "phone": "0966566695",
     "status": "VISITOR",
@@ -3842,7 +3842,7 @@ const initialParticipants = [
   {
     "id": 321,
     "title": "-",
-    "name": "Supada Rattagan",
+    "name": "สุภาดา รัตนกานต์",
     "email": "-",
     "phone": "-",
     "status": "VISITOR",
@@ -3866,7 +3866,7 @@ const initialParticipants = [
   {
     "id": 323,
     "title": "Prof.",
-    "name": "Wibool Piyawattanametha",
+    "name": "วิบูลย์ ปิยวัฒนเมธา",
     "email": "wibool@gmail.com",
     "phone": "0879365000",
     "status": "SPEAKER",
