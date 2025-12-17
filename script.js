@@ -21,6 +21,9 @@ function changeSession() {
 
 function getFilteredParticipants() {
   return participants.filter((p) => {
+    if (currentSession === "all_sessions") {
+      return true;
+    }
     if (currentSession === "17_all") {
       return p.session && p.session.startsWith("17");
     }
@@ -111,6 +114,16 @@ function showTab(tabName) {
   }
 }
 
+// Helper to determine status class
+function getStatusClass(status) {
+  const s = status.toLowerCase();
+  if (s.includes('vip')) return 'vip';
+  if (s.includes('speaker')) return 'vip';
+  if (s.includes('competitor')) return 'competitor';
+  if (s.includes('jury')) return 'jury';
+  return 'visitor';
+}
+
 // Search Functionality
 function searchParticipant() {
   const searchTerm = document
@@ -138,7 +151,7 @@ function searchParticipant() {
 
   resultDiv.innerHTML = results
     .map((p) => {
-      const statusClass = p.status.toLowerCase();
+      const statusClass = getStatusClass(p.status);
       const checkStatus = p.checked
         ? `<div style="color: #10b981; font-weight: 600; margin-top: 10px; font-size: 1.1rem;">✅ เช็คชื่อแล้ว (${p.checkTime})</div>`
         : `<div style="color: #f59e0b; font-weight: 600; margin-top: 10px; font-size: 1.1rem;">⚠️ ยังไม่ได้เช็คชื่อ</div>`;
@@ -211,7 +224,7 @@ function displayChecklist() {
 
   // Apply status filter
   if (statusFilter !== "all") {
-    filtered = filtered.filter((p) => p.status === statusFilter);
+    filtered = filtered.filter((p) => p.status.toLowerCase().includes(statusFilter.toLowerCase()));
   }
 
   // Apply attendance filter
@@ -231,7 +244,7 @@ function displayChecklist() {
 
   container.innerHTML = filtered
     .map((p) => {
-      const statusClass = p.status.toLowerCase();
+      const statusClass = getStatusClass(p.status);
       const checkedClass = p.checked ? "checked" : "";
       const checkIcon = p.checked ? "✓" : "○";
       const checkTime = p.checked
@@ -300,7 +313,7 @@ function showCheckInSuccess(participant) {
 
   // Reset classes and add new ones
   statusEl.className = "modal-status";
-  statusEl.classList.add(participant.status.toLowerCase());
+  statusEl.classList.add(getStatusClass(participant.status));
 
   timeEl.textContent = `เวลา: ${participant.checkTime}`;
 
@@ -408,7 +421,7 @@ function updateStats() {
   statuses.forEach((status) => {
     const statusLower = status.toLowerCase();
     const statusParticipants = filteredParticipants.filter(
-      (p) => p.status === status
+      (p) => p.status.toLowerCase().includes(statusLower)
     );
     const statusTotal = statusParticipants.length;
     const statusChecked = statusParticipants.filter((p) => p.checked).length;

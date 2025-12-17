@@ -46,6 +46,7 @@
       <div class="session-selector">
         <label for="sessionSelect">เลือกวัน/รอบ:</label>
         <select id="sessionSelect" onchange="changeSession()">
+          <option value="all_sessions">รายชื่อทั้งหมด (ทุกวัน)</option>
           <option value="17_all">วันที่ 17 ธ.ค. (ทั้งหมด)</option>
           <option value="17_morning">วันที่ 17 ธ.ค. (เช้า)</option>
           <option value="17_afternoon_1">วันที่ 17 ธ.ค. (บ่าย ห้อง 1)</option>
@@ -95,6 +96,9 @@
             <select id="statusFilter" onchange="filterChecklist()">
               <option value="all">ทั้งหมด</option>
               <option value="VIP">VIP</option>
+              <option value="Speaker">Speaker</option>
+              <option value="Exhibitor">Exhibitor</option>
+              <option value="Staff">Staff</option>
               <option value="Competitor">Competitor</option>
               <option value="Visitor">Visitor</option>
             </select>

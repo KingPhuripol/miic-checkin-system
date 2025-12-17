@@ -91,6 +91,36 @@ def extract_participants(filepath, education_level, session_id):
         
         participants.append(participant)
         participant_id += 1
+        
+        # Check for advisor (only on team row)
+        if pd.notna(team_num) and str(team_num).strip() != '':
+            advisor_name = row.get('อาจารย์ที่ปรึกษา', '')
+            advisor_status = row.get('เข้าร่วม/ไม่เข้าร่วม.1', '')
+            
+            if pd.notna(advisor_name) and str(advisor_name).strip() not in ['', '-']:
+                 # Check status
+                 status_str = str(advisor_status).strip() if pd.notna(advisor_status) else ''
+                 
+                 if status_str == 'เข้าร่วม':
+                     # Add advisor
+                     adv_name = str(advisor_name).strip()
+                     
+                     advisor = {
+                        'id': participant_id,
+                        'name': adv_name,
+                        'email': clean_value(row.get('E-Mail.1', '')),
+                        'phone': clean_value(row.get('เบอร์ติดต่อ.1', '')),
+                        'team_num': current_team_num,
+                        'team_name': current_team_name if current_team_name else '-',
+                        'institution': current_institution if current_institution else '-',
+                        'advisor': '-', 
+                        'status': 'Advisor',
+                        'education_level': education_level,
+                        'session': session_id,
+                        'participation_status': 'เข้าร่วม'
+                     }
+                     participants.append(advisor)
+                     participant_id += 1
     
     return participants
 

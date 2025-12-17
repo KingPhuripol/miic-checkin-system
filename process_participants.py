@@ -65,6 +65,24 @@ def clean_status(status):
     if s == "": return "VISITOR"
     return s
 
+def clean_follower_names(follower_str):
+    if not follower_str or pd.isna(follower_str): return []
+    s = str(follower_str).strip()
+    if s in ["-", "", "ไม่มี"]: return []
+    
+    # Replace "และ" with ","
+    s = s.replace("และ", ",")
+    
+    # Split by ","
+    parts = s.split(",")
+    
+    names = []
+    for p in parts:
+        n = p.strip()
+        if n:
+            names.append(n)
+    return names
+
 all_participants = []
 participant_id = 1
 
@@ -126,6 +144,34 @@ for filename in files:
         }
         all_participants.append(p)
         participant_id += 1
+        
+        # Check for followers
+        if row.get('has_follower') and 'ท่าน' in str(row['has_follower']):
+             follower_names = clean_follower_names(row.get('follower_name'))
+             for fname in follower_names:
+                 # Check if this follower is already in the list (by name) to avoid duplicates
+                 # if they are also listed as a main participant
+                 # But checking against all_participants is slow and they might be added later.
+                 # For now, just add them. The user can filter duplicates if needed, 
+                 # or we assume if they are listed as follower here, they should be added.
+                 # However, we saw "อนงค์นาฏ ขาวสังข์" listed as follower AND as main participant.
+                 # If we add her here, she will be duplicated.
+                 # But maybe that's better than missing her if she wasn't a main participant.
+                 
+                 fp = {
+                    'id': participant_id,
+                    'title': "-", 
+                    'name': fname,
+                    'email': "-",
+                    'phone': "-",
+                    'status': "VISITOR", 
+                    'org': clean_org(row['org']), 
+                    'note': f"ผู้ติดตามของ {name_val}",
+                    'session': session,
+                    'source': 'follower'
+                 }
+                 all_participants.append(fp)
+                 participant_id += 1
 
     # --- Right Side Processing ---
     right_start_idx = 12
@@ -192,9 +238,118 @@ for filename in files:
                 all_participants.append(p)
                 participant_id += 1
 
+# --- Process all_responses.csv (The Master List) ---
+response_file = "all_responses.csv"
+response_path = os.path.join(data_dir, response_file)
+
+if os.path.exists(response_path):
+    print(f"Processing {response_file}...")
+    try:
+        df_resp = pd.read_csv(response_path)
+        
+        # Create a set of existing (name, session) to avoid duplicates
+        existing_entries = set()
+        for p in all_participants:
+            existing_entries.add((p['name'], p['session']))
+            
+        # Map columns
+        # 'กรุณาเลือกวันที่ต้องการเข้าร่วมฟังเสวนา' -> 17 Morning (Index 3)
+        # 'กรุณาเลือกห้องที่ต้องการเข้าร่วมฟังเสวนา' -> 17 Afternoon (Index 4)
+        # 'กรุณาเลือกวันที่ต้องการเข้าร่วมฟังเสวนา.1' -> 18 All Day (Index 5)
+        
+        col_17_morning = df_resp.columns[3]
+        col_17_afternoon = df_resp.columns[4]
+        col_18_all_day = df_resp.columns[5]
+        
+        col_title = 'ระบุ ยศ ตำแหน่ง หรือคำนำหน้า'
+        col_name = 'ระบุ ชื่อ-นามสกุล'
+        col_email = 'ระบุ E-mail '
+        col_phone = 'ระบุ เบอร์ติดต่อ'
+        col_follower = 'มีผู้ติดตามมาด้วยหรือไม่ *หากมากกว่า 2 ท่านกรุณาระบุ อื่นๆพร้อมบอกจำนวน'
+        col_follower_name = '*หากมีผู้ติดตาม กรุณากรอกชื่อ-นามสกุล ของผู้ติดตาม'
+        col_org = 'ระบุ สังกัดของท่าน'
+        
+        for _, row in df_resp.iterrows():
+            name_val = str(row[col_name]).strip()
+            if not name_val or pd.isna(row[col_name]): continue
+            
+            title_val = clean_title(row.get(col_title))
+            email_val = clean_value(row.get(col_email))
+            phone_val = clean_value(row.get(col_phone))
+            org_val = clean_org(row.get(col_org))
+            
+            # Determine sessions
+            sessions_to_add = []
+            
+            # 17 Morning
+            if row[col_17_morning] == 'เข้าร่วม':
+                sessions_to_add.append('17_morning')
+                
+            # 17 Afternoon
+            if row[col_17_afternoon] == 'ห้องที่ 1':
+                sessions_to_add.append('17_afternoon_1')
+            elif row[col_17_afternoon] == 'ห้องที่ 2':
+                sessions_to_add.append('17_afternoon_2')
+                
+            # 18 All Day
+            if row[col_18_all_day] == 'เข้าร่วม':
+                sessions_to_add.append('18_all_day')
+                
+            for sess in sessions_to_add:
+                if (name_val, sess) not in existing_entries:
+                    print(f"Adding missing participant: {name_val} for {sess}")
+                    p = {
+                        'id': participant_id,
+                        'title': title_val,
+                        'name': name_val,
+                        'email': email_val,
+                        'phone': phone_val,
+                        'status': 'VISITOR', # Default to VISITOR for online responses
+                        'org': org_val,
+                        'note': 'From all_responses.csv',
+                        'session': sess,
+                        'source': 'all_responses'
+                    }
+                    all_participants.append(p)
+                    existing_entries.add((name_val, sess))
+                    participant_id += 1
+                    
+                    # Check followers for this session
+                    if pd.notna(row.get(col_follower)) and 'ท่าน' in str(row[col_follower]):
+                         follower_names = clean_follower_names(row.get(col_follower_name))
+                         for fname in follower_names:
+                             if (fname, sess) not in existing_entries:
+                                 print(f"Adding missing follower: {fname} for {sess}")
+                                 fp = {
+                                    'id': participant_id,
+                                    'title': "-", 
+                                    'name': fname,
+                                    'email': "-",
+                                    'phone': "-",
+                                    'status': "VISITOR", 
+                                    'org': org_val, 
+                                    'note': f"ผู้ติดตามของ {name_val} (From all_responses)",
+                                    'session': sess,
+                                    'source': 'follower_all_responses'
+                                 }
+                                 all_participants.append(fp)
+                                 existing_entries.add((fname, sess))
+                                 participant_id += 1
+
+    except Exception as e:
+        print(f"Error processing all_responses.csv: {e}")
+
 # Save to JSON
 output_path = os.path.join(os.getcwd(), 'participants.json')
 with open(output_path, 'w', encoding='utf-8') as f:
     json.dump(all_participants, f, ensure_ascii=False, indent=2)
 
 print(f"Processed {len(all_participants)} participants. Saved to {output_path}")
+
+# Also create data.js
+data_js_path = os.path.join(os.getcwd(), 'data.js')
+with open(data_js_path, 'w', encoding='utf-8') as f:
+    f.write('const initialParticipants = ')
+    json.dump(all_participants, f, ensure_ascii=False, indent=2)
+
+print(f"Saved to {data_js_path}")
